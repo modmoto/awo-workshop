@@ -50,28 +50,26 @@ Um zu sehen, ob alles richtig funktioniert, drückt die Windows Taste und gebt `
 
 ![VSCode](bilder/intro/cmd.JPG)
 
-Tippt nun folgenden Befehl
+Tippt nun folgenden Befehl und drückt `enter`
 ```
 git --version
 ```
-Es sollte folgende Ausgabe kommen (die Nummer kann abweichen)
-```
-git version 2.21.0.windows.1
-```
-und 
+danach dasselbe mit
 ```
 node --version
 ```
-hier sollte so eine Ausgabe kommen  (die Nummer kann abweichen)
-```
-v14.16.0
-```
-Falls folgende Ausgabe kommt:
 
+nun sollte folgende Ausgabe zu sehen sein (die Nummern können abweichen)
+
+![VSCode](bilder/intro/check.JPG)
+
+Falls folgende Ausgabe kommt:
 ```
 .... is not recognized as an internal or external command, operable program or batch file.
 ```
 Ist etwas bei der Installation schief gegangen. Melde dich am besten bei mir, damit wir das Problem vor denm Workshop lösen können.
+
+Sonst klappt nun alles, Glückwunsch!
 
 
 ## Logins:
