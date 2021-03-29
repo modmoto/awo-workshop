@@ -3,7 +3,7 @@ Hallo liebe Freiwilligen,
 hier trage ich alle nötigen Informationen für unser Seminar ein, damit ihr diese später immer nachlesen könnt. 
 
 # Todos vor dem Kurs
-Um in der Seminarwoche direkt loslegen zu können, brauchen wir noch ein bisschen Software. Ich erkläre hier, wie ihr das installieren könnt. Keine Angst, es ist einfacher, als es zuerst aussieht ;)
+Um in der Seminarwoche direkt loslegen zu können, brauchen wir noch ein bisschen Software und ein Nutzerkonto bei zwei Webseiten. Ich erkläre hier, wie ihr das installieren könnt. Keine Angst, es ist einfacher, als es zuerst aussieht ;)
 
 ## Visual Studio Code
 Download: https://code.visualstudio.com/
@@ -51,7 +51,6 @@ Falls folgende Ausgabe kommt:
 Ist etwas bei der Installation schief gegangen. Melde dich am besten bei mir, damit wir das Problem vor dem Seminar lösen können.
 
 Sonst klappt nun alles, Glückwunsch! :clap::clap::clap:
-
 
 ## Logins:
 Wir brauchen auch noch ein Nutzerkonto für folgende Webseiten. Merkt euch das passwort am besten ;). Es reicht wenn ihr euch testweise einmal einloggt, was genau die Webseiten machen erkläre ich dann im Seminar.
