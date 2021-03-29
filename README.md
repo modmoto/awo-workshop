@@ -66,3 +66,12 @@ Github ist eine Webseite für GIT (siehe oben). Das ist dann die Cloud, in der w
 https://www.heroku.com/
 
 Heroku ist der Ort, wo wir unsere Webseite erreichen können. Ihr bekommt hier eine URL, wie zum Beispiel https://simon-guestbook-vue.herokuapp.com/ (das erste aufrufen dauert immer ein bisschen) auf der ihr dann eure Webseite aufrufen könnt.
+
+## Projekte für das Seminar:
+Diese Projekte sind hier verlinkt, damit ihr sie später leichter findet. Bis zum Seminar braucht ihr die noch nicht.
+
+https://github.com/modmoto/workshop-website
+
+https://github.com/modmoto/workshop-website-vue
+
+https://github.com/modmoto/workshop-backend-express
