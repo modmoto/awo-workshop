@@ -27,7 +27,7 @@ https://nodejs.org/en/
 ![VSCode](bilder/intro/node.JPG)
 
 ## Funktion überprüfen
-Um zu sehen, ob alles richtig funktioniert, drückt die Windows Taste und tippt einfach `cmd` auf der Tastatur. Ihr könnt auch die Suche Funktion klicken und dort `cmd` eingeben. Klickt dann auf das Programm `Eingabeaufforderung`.
+Um zu sehen, ob alles richtig funktioniert, drückt die Windows Taste und tippt einfach `cmd` auf der Tastatur. Ihr könnt auch die Suche Funktion klicken und dort `cmd` eingeben. Klickt dann auf das Programm `Eingabeaufforderung`. Wir überprüfen nun, ob die Programme richtig installiert wurden.
 
 ![VSCode](bilder/intro/cmd.JPG)
 
@@ -40,7 +40,7 @@ danach dasselbe mit
 node --version
 ```
 
-nun sollte folgende Ausgabe zu sehen sein (die Nummern können abweichen)
+Die `Eingabeaufforderung` sollte euch nun die Version von GIT und Node ausgegeben haben, das bedeutet, dass die Programme erfolgreich installiert wurden. Es sollte folgendermaßen aussehen (die Nummern können abweichen)
 
 ![VSCode](bilder/intro/check.JPG)
 
@@ -48,9 +48,9 @@ Falls folgende Ausgabe kommt:
 ```
 .... is not recognized as an internal or external command, operable program or batch file.
 ```
-Ist etwas bei der Installation schief gegangen. Melde dich am besten bei mir, damit wir das Problem vor denm Workshop lösen können.
+Ist etwas bei der Installation schief gegangen. Melde dich am besten bei mir, damit wir das Problem vor dem Workshop lösen können.
 
-Sonst klappt nun alles, Glückwunsch!
+Sonst klappt nun alles, Glückwunsch! :clap::clap::clap:
 
 
 ## Logins:
