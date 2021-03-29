@@ -6,14 +6,14 @@ hier trage ich alle nötigen Informationen für unseren Workshop ein, damit ihr 
 Um in der Seminarwoche direkt loslegen zu können, brauchen wir noch ein bisschen Software. Ich erkläre hier, wie ihr das installieren könnt. Keine Angst, es ist einfacher, als es zuerst aussieht ;)
 
 ## Visual Studio Code
-Visual Studio Code (auch VS genannt) ist ein Texteditor, mit dem wir unsere Webseite bearbeiten werden. Er kommt von Microsoft und ist kostenlos, aber trotzdem sehr gut und auch weit verbreitet. Wenn ihr schon etwas Programmiererfahrung habt und euch ein anderer Editor besser gefällt, könnt ihr den natürlich auch nehmen. Im Workshop werde ich allerdings alle Beispiele mit VS vorstellen.
+Visual Studio Code (auch VS genannt) ist ein Texteditor, mit dem wir unsere Webseite bearbeiten werden. Er kommt von Microsoft und ist kostenlos, aber trotzdem sehr gut und auch weit verbreitet. Wenn ihr schon etwas Programmiererfahrung habt und euch ein anderer Editor besser gefällt, könnt ihr den natürlich auch nehmen. Im Workshop werde ich allerdings alle Beispiele mit VS vorstellen. Lass bei der Installation einfach alles auf den Standardeinstellungen und klicke dich durch.
 
 https://code.visualstudio.com/
 
 ![VSCode](bilder/intro/vscode.JPG)
 
 ## GIT
-GIT ist ein sogenanntes Versionskontrollsystem. Was das genau ist, erkläre ich später im Workshop. Um es kurz zu machen: Mit GIT ladet ihr eure gebastelte Webseite in die Cloud, wo wir sie dann später über einen Browser ansehen können.
+GIT ist ein sogenanntes Versionskontrollsystem. Was das genau ist, erkläre ich später im Workshop. Um es kurz zu machen: Mit GIT ladet ihr eure gebastelte Webseite in die Cloud, wo wir sie dann später über einen Browser ansehen können. Lass bei der Installation einfach alles auf den Standardeinstellungen und klicke dich durch.
 
 https://git-scm.com/download/win
 
