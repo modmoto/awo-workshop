@@ -1,8 +1,10 @@
 Hallo liebe Freiwilligen,
 
-hier trage ich alle nötigen Informationen für unseren Workshop ein, damit ihr diese später immer nachlesen könnt. Um in der Seminarwoche schnell starten zu können, brauchen wir noch ein bisschen Software. Hier findet ihr die Anleitung dazu:
+hier trage ich alle nötigen Informationen für unseren Workshop ein, damit ihr diese später immer nachlesen könnt. 
 
 # Todos vor dem Kurs
+Um in der Seminarwoche schnell starten zu können, brauchen wir noch ein bisschen Software. Hier findet ihr die Anleitung dazu:
+
 ## Visual Studio Code
 Visual Studio Code (auch VS genannt) ist ein Texteditor, mit dem wir unsere Webseite bearbeiten werden. Er kommt von Microsoft und ist kostenlos, aber trotzdem sehr gut und auch weit verbreitet. Wenn ihr schon etwas Programmiererfahrung habt und euch ein anderer Editor besser gefällt, könnt ihr den natürlich auch nehmen. Im Workshop werde ich allerdings alle Beispiele mit VS vorstellen.
 
