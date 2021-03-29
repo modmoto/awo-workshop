@@ -10,21 +10,45 @@ Visual Studio Code (auch VS genannt) ist ein Texteditor, mit dem wir unsere Webs
 
 https://code.visualstudio.com/
 
+![VSCode](bilder/intro/vscode.JPG)
+
 ## GIT
 GIT ist ein sogenanntes Versionskontrollsystem. Was das genau ist, erkläre ich später im Workshop. Um es kurz zu machen: Mit GIT ladet ihr eure gebastelte Webseite in die Cloud, wo wir sie dann später über einen Browser ansehen können.
+
 https://git-scm.com/download/win
+
+![VSCode](bilder/intro/git.JPG)
 
 ## Node
 Node ist ein Programm, das einige Sachen beim Programmieren vereinfacht. Was genau ist schwer zu erklären, wenn du noch keine Erfahrung mit programmieren hast. Vertrau mir einfach, dass wir es brauchen und es nützlich ist ;)
-Die Installation kann etwas länger gehen, 
+Die Installation kann etwas länger gehen, also ein paar Minuten.
 
-WICHTIG!!:
+**WICHTIG!!:**
+
 Bei der Installation gibt es einen wichtigen Haken, den ihr setzen müsst! Wenn ihr das nicht tut, muss man noch andere Programme von Hand installieren und das ist etwas nervig. Falls ihr es übersehen haben solltet, könnt ihr den Installer einfach noch einmal starten und dann den Haken auswählen. 
 
 https://nodejs.org/en/
 
+Ladet es euch erst runter:
+
+![VSCode](bilder/intro/node0.JPG)
+
+Wenn dieser Bildschirm kommt, klickt den Haken!
+
+![VSCode](bilder/intro/node1.JPG)
+
+Danach fordert euch der Installer auf, einmal eine Taste zu drücken um den Rest der Software zu installieren. Das sollte nun ein paar Minuten dauern.
+
+![VSCode](bilder/intro/node2.JPG)
+
+Es sollte nun ein Haufen Text an euch vorbeirauschen
+
+![VSCode](bilder/intro/node3.JPG)
+
 ## Funktion überprüfen
 Um zu sehen, ob alles richtig funktioniert, drückt die Windows Taste und gebt `cmd` in die Suche ein. Klickt dann auf das Programm `Eingabeaufforderung`.
+
+![VSCode](bilder/intro/cmd.JPG)
 
 Tippt nun folgenden Befehl
 ```
