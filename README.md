@@ -56,5 +56,5 @@ Github ist eine Webseite für GIT (siehe oben). Das ist dann die Cloud, in der w
 http://github.com/
 
 ### Heroku
-Heroku ist dann der Ort, wo wir unsere Webseite erreichen können. Ihr bekommt hier eine URL, wie https://simons-guestbook.herokuapp.com auf der ihr dann eure Webseite aufrufen könnt.
+Heroku ist der Ort, wo wir unsere Webseite erreichen können. Ihr bekommt hier eine URL, wie zum Beispiel https://simons-guestbook.herokuapp.com auf der ihr dann eure Webseite aufrufen könnt.
 https://www.heroku.com/
