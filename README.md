@@ -40,7 +40,7 @@ https://www.heroku.com/
 
 Heroku ist der Ort, wo wir unsere Webseite erreichen können. Ihr bekommt hier eine URL, wie zum Beispiel https://simon-guestbook-vue.herokuapp.com/ (das erste aufrufen dauert immer ein bisschen) auf der ihr dann eure Webseite aufrufen könnt.
 
-## Funktion überprüfen (optional, aber empfohlen ;) )
+## Funktion überprüfen (optional, aber empfohlen)
 Um zu sehen, ob alles richtig funktioniert, drückt die Windows Taste und tippt einfach `cmd` auf der Tastatur. Ihr könnt auch die Suche Funktion klicken und dort `cmd` eingeben. Klickt dann auf das Programm `Eingabeaufforderung`. Wir überprüfen nun, ob die Programme richtig installiert wurden.
 
 ![VSCode](bilder/intro/cmd.JPG)
