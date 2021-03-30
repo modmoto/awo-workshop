@@ -12,19 +12,19 @@ Visual Studio Code (auch VS genannt) ist ein Texteditor, mit dem wir unsere Webs
 
 ![VSCode](bilder/intro/vscode.JPG)
 
-## GIT 
-Download: https://git-scm.com/download/win
-
-GIT ist ein sogenanntes Versionskontrollsystem. Was das genau ist, erkläre ich später im Seminar. Um es kurz zu machen: Mit GIT ladet ihr eure gebastelte Webseite in die Cloud, wo wir sie dann später über einen Browser ansehen können. Lass bei der Installation einfach alles auf den Standardeinstellungen und klicke dich durch. Es sind relativ viele Screens, bis man fertig ist, nur damit du nicht denkst, du bist irgendwo falsch abgebogen. 
-
-![VSCode](bilder/intro/git.JPG)
-
 ## Node
 Download: https://nodejs.org/en/
 
 Node ist ein Programm, das einige Sachen beim Programmieren vereinfacht. Was genau ist schwer zu erklären, wenn du noch keine Erfahrung mit programmieren hast. Vertrau mir einfach, dass wir es brauchen und es nützlich ist ;) Lass auch hier bei der Installation einfach alles auf den Standardeinstellungen und klicke dich durch.
 
 ![VSCode](bilder/intro/node.JPG)
+
+## GIT 
+Download: https://git-scm.com/download/win
+
+GIT ist ein sogenanntes Versionskontrollsystem. Was das genau ist, erkläre ich später im Seminar. Um es kurz zu machen: Mit GIT ladet ihr eure gebastelte Webseite in die Cloud, wo wir sie dann später über einen Browser ansehen können. Lass bei der Installation einfach alles auf den Standardeinstellungen und klicke dich durch. Es sind relativ viele Screens, bis man fertig ist, nur damit du nicht denkst, du bist irgendwo falsch abgebogen. 
+
+![VSCode](bilder/intro/git.JPG)
 
 ## Funktion überprüfen
 Um zu sehen, ob alles richtig funktioniert, drückt die Windows Taste und tippt einfach `cmd` auf der Tastatur. Ihr könnt auch die Suche Funktion klicken und dort `cmd` eingeben. Klickt dann auf das Programm `Eingabeaufforderung`. Wir überprüfen nun, ob die Programme richtig installiert wurden.
