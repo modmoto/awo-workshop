@@ -55,6 +55,8 @@ Natürlich sieht man hier nicht wirklich etwas, wir werden diese Art von tags sp
 
 ## `<button>`
 
+## `<link>`
+
 ## `<table>`
 
 ## `<select>`

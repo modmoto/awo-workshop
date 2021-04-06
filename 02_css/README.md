@@ -1,5 +1,16 @@
 # CSS Basics
 hier kommen HTML basics hin
 
-## Farben in Hex CODE
+## class vs id
 
+## Selektoren
+
+## Farben
+
+## Größe
+
+## Abstand
+
+## Position
+
+## Farben in Hex CODE
