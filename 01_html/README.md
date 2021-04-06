@@ -71,7 +71,8 @@ Das hier:
 ```
 
 ergibt dann das hier (die Farben habe ich hinzugefügt um es klarer zu machen, wie genau das geht, kommt im CSS Teil):
-![VSCode](pictures/Basics.JPG)
+
+![VSCode](pictures/divs-spans.JPG)
 
 
 ## Überschriften (`<h1>` etc)
