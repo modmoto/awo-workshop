@@ -69,7 +69,7 @@ Sonst klappt nun alles, Glückwunsch! :clap::clap::clap:
 ## Projekte für das Seminar:
 Diese Projekte sind hier verlinkt, damit ihr sie später leichter findet. Bis zum Seminar braucht ihr die noch nicht.
 
-https://github.com/modmoto/workshop-website
+https://github.com/modmoto/workshop-html-and-css-examples
 
 https://github.com/modmoto/workshop-website-vue
 
