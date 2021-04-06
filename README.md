@@ -1,4 +1,4 @@
-Hallo liebe Freiwilligen,
+Hallo liebe Freiwillige,
 
 hier trage ich alle nötigen Informationen für unser Seminar ein, damit ihr diese später immer nachlesen könnt. 
 
