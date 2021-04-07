@@ -197,8 +197,7 @@ Die ersten paar Zahlen sehen dann also so aus:
 Das muss nicht verstanden werden, in VS gibt es einen Color Picker, mit dem ihr einfach die Farben auswählen könnt ;)
 
 Gut zu wissen:
-`#00 00 00` ist schwarz und `#FF FF FF` ist weiß. Sobald alle Werte gleich sind, ist keine Farbe mehr vorhanden als die anderen und damit handelt es sich immer um ein mehr oder weniger helles grau. Also ein `#AA AA AA` ist ein helles grau, während `#05 05 05` ein recht dunkles grau ist. 
-
+`#00 00 00` ist schwarz und `#FF FF FF` ist weiß. Sobald alle Werte gleich sind, ist keine Farbe mehr vorhanden als die anderen und damit handelt es sich immer um ein mehr oder weniger helles grau. Also ein `#AA AA AA` ist ein helles grau, während `#05 05 05` ein recht dunkles grau ist. Man kann HEX in CSS auch abkürzen, wenn die RGB Werte gleich sind. Also `#AA AA AA` ist dasselbe wie `#AAA` oder `#00 99 AA` entspricht `#09A`.
 
 ## Größe
 
