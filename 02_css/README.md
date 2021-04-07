@@ -245,7 +245,38 @@ Wird mit Pixel oder Prozent angegeben. Die % bezieht sich immer auf das Element 
 ```
 
 ## Abstand
+Abstand zwischen zwei Elementen kann mit `padding` oder `margin` generiert werden. Dabei ist `margin` der Abstand nach außen und `padding` der Abstand nach innen. Wenn du du also bei einem Button willst, dass er eher so aussieht:
 
+![VSCode](pictures/padding.JPG)
+
+Wenn du möchtest, dass er mehr abstand zu seinen nachbarn hat, verwendet margin, wie hier:
+
+![VSCode](pictures/margin.JPG)
+
+Im CSS sieht das dann so aus:
+
+```
+.padding-example {
+    width: 200px;
+    padding: 30px;
+}
+
+.margin-example {
+    margin: 30px;
+}
+```
+
+Man kann `padding` und `margin` auch mit einem suffix von `-top`, `-bottom`, `-left`, und `-right` angeben, um nur eine bestimmte Seite zu verändern:
+
+```
+.mixed-example {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+```
 ## Position
 
 ## CSS direkt in HTML
