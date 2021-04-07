@@ -228,6 +228,21 @@ Gut zu wissen:
 `#00 00 00` ist schwarz und `#FF FF FF` ist weiß. Sobald alle Werte gleich sind, ist keine Farbe mehr vorhanden als die anderen und damit handelt es sich immer um ein mehr oder weniger helles grau. Also ein `#AA AA AA` ist ein helles grau, während `#05 05 05` ein recht dunkles grau ist. Man kann HEX in CSS auch abkürzen, wenn die RGB Werte gleich sind. Also `#AA AA AA` ist dasselbe wie `#AAA` oder `#00 99 AA` entspricht `#09A`.
 
 ## Größe
+- width
+- height
+
+Wird mit Pixel oder Prozent angegeben. Die % bezieht sich immer auf das Element außen rum. Also wenn das Element außen 100 breit ist und ein Kind `width: 50%;` hat, ist es 50 Pixel breit. Beispiel dazu:
+
+```
+.container {
+    width: 100px;
+    height: 150px;
+}
+
+.container div {
+    width: 50%;
+}
+```
 
 ## Abstand
 
