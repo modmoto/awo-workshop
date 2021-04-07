@@ -276,7 +276,6 @@ Man kann `padding` und `margin` auch mit einem suffix von `-top`, `-bottom`, `-l
     padding-bottom: 30px;
 }
 ```
-## Position
 
 ## CSS direkt in HTML
 Man kann auch einen style direkt an einem html element definieren. Man tut das allerdings nur sehr selten, da es schnell sehr unübersichtlich wird. Für schnelles austesten ist es allerdings gut. Hier beachten, dass auch jeder Style mit einem `;` abgeschlossen werden muss. Sobald es also mehr als 2-3 Anweisungen sind, wird es sehr unübersichtlich. Das sieht dann so aus:
