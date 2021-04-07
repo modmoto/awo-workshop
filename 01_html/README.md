@@ -83,6 +83,10 @@ Mit den tags `<h1>` bis `<h5>` kann man überschriften definieren, die mit steig
 <h2>Headline 2</h2>
 <h3>Headline 3</h3>
 ```
+
+ergibt:
+![VSCode](pictures/headers.JPG)
+
 ## Buttons `<button>`
 Mit dem Button tag kann man Buttons darstellen. Wie auch span werden buttons in einer Reihe nebeneinander dargestellt.
 ```
@@ -95,6 +99,16 @@ Mit dem Button tag kann man Buttons darstellen. Wie auch span werden buttons in 
 </button>
 ```
 
+ergibt:
+
+<button>
+    click me
+</button>
+
+<button>
+    click me also
+</button>
+
 ## Links `<link>`
 Um klickbare Links darzustellen, kann man den a tag verwenden. Weiterhin muss man das Ziel mit dem Attribut `href` angeben.
 ```
@@ -102,6 +116,11 @@ Um klickbare Links darzustellen, kann man den a tag verwenden. Weiterhin muss ma
     hier gehts zu google
 </a>
 ```
+
+ergibt:
+<a href="https://google.com">
+    hier gehts zu google
+</a>
 
 ## Tabellen `<table>`
 Tabellen werden nicht mehr so häufig verwendet, aber für das darstellen von vielen Daten auf einmal, machen sie immer noch Sinn. Tabellen haben zwei Sektionen, den `<thead>` und den `<tbody>`. Im thead hat man meistens die BEschreibungen der Spalten und diese werden standardmäßig auch dicher formatiert, damit man es besser erkennt. Für jede Überschrift nimmt man einen `<th>` tag der die Überschrift definiert. Im tbody definiert man dann für jede Reihe eine `<tr>` (TableRow) und für jede Zelle in einer Reihe definiert man ein `<td>` (TableData) element. Wenn man eine Zelle über mehrere Spalten/Reihen ziehen möchte, kann man das mit dem Attribut `rowspan` bzw `colspan` machen. Dann wird die Zelle rechts daneben oder darunter mit dem Inhalt der Zelle erweitert. Am besten mal ein bisschen damit rumspielen, dann wird das klarer.
@@ -147,6 +166,8 @@ Tabellen werden nicht mehr so häufig verwendet, aber für das darstellen von vi
     </tbody>
 </table>
 ```
+
+ergibt:
 <table>
     <thead>
         <th>
@@ -198,10 +219,8 @@ Dropdowns werden mit dem `<select>` tag erstellt und für jede Auswahlmöglichke
 ```
 
 ergibt:
-<select>
-    <option>Option 1</option>
-    <option>Option 2</option>
-</select>
+
+![VSCode](pictures/options.png)
 
 ## Textfelder, Checkboxen und Slider`<input>`
 Der `<input>` tag ist etwas speziell, da er mehrere Formen annehmen kann, je nachdem welcher wert im `type` Attribut gesetzt wird. Davon gibt es `text`, `range`, `radio` und `checkbox`. Wie man diese Werte dann verarbeitet, kommt im Javascript-Teil. 
@@ -219,6 +238,19 @@ Der `<input>` tag ist etwas speziell, da er mehrere Formen annehmen kann, je nac
 <input type="checkbox" value="check2"><span>Check 2</span></br>
 ```
 
+ergibt:
+<span>Text Input:</span>
+<input type="text"></br>
+
+<span>Range Input:</span>
+<input type="range"></br>
+
+<input type="radio" value="klick1"><span>Option 1</span></br>
+<input type="radio" value="klick2"><span>Option 2</span></br>
+
+<input type="checkbox" value="check1"><span>Check 1</span></br>
+<input type="checkbox" value="check2"><span>Check 2</span></br>
+
 ## Listen `<ul>` & `<ol>`
 Es gibt zwei Arten von Listen. `<ol>` (OrderedList) ist sortiert und `<ul>` (UnorderedList) ist unsortiert. Sortiert heißt aber nicht, dass die Liste sortiert wird, es werden nur automatisch die Nummern in Zahlen vor die Elemente geschrieben. Die `<li>` (ListItem) tags werden für beide Listen verwendet.
 ```
@@ -234,6 +266,19 @@ Es gibt zwei Arten von Listen. `<ol>` (OrderedList) ist sortiert und `<ul>` (Uno
     <li>item 3</li>
 </ol>
 ```
+
+ergibt:
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ul>
+
+<ol>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ol>
 
 ## invalides HTML
 HTML ist sehr "robust" was Fehler angeht. Wenn man mal vergisst einen tag zu schließen, sieht die Seite oft noch so aus wie vorher. Allerdings liegt das nicht an HTML sondern an den Browsern, die diese Fehler korrigieren und mit der Zeit immer besser geworden sind. Ältere Browser machen gerne mal aus kaputtem HTML auch eine kaputte Webseite. Deswegen rentiert es sich, hier trotzdem sorgfältig zu arbeiten. Probiert gerne mal rum, was euer Browser so aushält.
