@@ -107,8 +107,98 @@ Man kann Selektoren auch verschachteln. Hierbei nimmt man einfach nur ein Leerze
 
 Hier wird dann in der Klasse menu alle divs genommen und blau gefärbt. Andere divs, die sich nicht in dem menu container befinden werden igoniert.
 
+### Pseudo Selektoren
+Pseudo Selektoren sind spezielle Selektoren, die auf eine bestimmte Bedingung reagieren. Ein sehr beliebter davon ist der `:hover` Selektor, der verwendet wird, um zum Beispiel die Farbe eines Buttons zu ändern, wenn die Mouse über den Button "hovert". Ein Pseudo selektor beginnt immer mit `:`. Das sieht dann so aus:
+```
+.primary-button:hover {
+    color: deeppink;
+}
+```
+Ein weiterer beliebter Pseude Selektor sind die `:nth-child(n)` der das n-te Kind eines Elements auswählt. Also `:nth-child(2)` wäre dann das zweite element in einem element. Damit kann man auch abwechselnd stylen, wenn man anstelle einer Zahl `even` oder `odd` verwendet. Dann werden alle geraden bzw ungerade elemente ausgewählt
+
+```
+#menu div:nth-child(2) {
+    background-color: blue;
+}
+
+#menu div:nth-child(odd) {
+    background-color: red;
+}
+```
+
+das liefert dann:
+
+![VSCode](pictures/pseudo.JPG)
 
 ## Farben
+Farben können in CSS nicht nur mit normalem Text wie `green` oder `red` definiert werden, sondern auch in einem sogenanten HEX Code. Ein Hexcode wird mit `#` begonnen und hat genau 6 Zeichen. Dabei sind die ersten zwei Zahlen der Wert für rot, dann grün und dann blau. Das ist der sogenannte "RGB" Wert (rot, grün, blau). 
+
+![VSCode](pictures/hex-reading.png)
+
+Allerdings gehen die Zahlen eigentlich von 0-255. Ab 100 sind das mehr als zwei Zeichen, weswegen die Zahlen "HEX" codiert werden. HEX ist ein Zahlenraum, der nicht von 0-9 geht, sondern von 0-F. Man führt Hex Zahlen dann auch oft mi 0x oder # an, um klarzumachen, dass es sich um eine HEX Codierung handelt. 
+
+Die ersten paar Zahlen sehen dann also so aus:
+<table>
+<tr>
+<td>Normal</td>
+<td>HEX</td>
+</tr>
+<tr>
+<td>1</td>
+<td>#1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>#2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>#3</td>
+</tr>
+<tr>
+<td style="text-align: center" colspan=2>etc...</td>
+</tr>
+<tr>
+<td>10</td>
+<td>#A</td>
+</tr>
+<tr>
+<td>11</td>
+<td>#B</td>
+</tr>
+<tr>
+<td>12</td>
+<td>#C</td>
+</tr>
+<tr>
+<td>13</td>
+<td>#D</td>
+</tr>
+<tr>
+<td>14</td>
+<td>#E</td>
+</tr>
+<tr>
+<td>15</td>
+<td>#F</td>
+</tr>
+<tr>
+<td>16</td>
+<td>#10</td>
+</tr>
+<tr>
+<td>17</td>
+<td>#11</td>
+</tr>
+
+</tr>
+</table>
+
+Das muss nicht verstanden werden, in VS gibt es einen Color Picker, mit dem ihr einfach die Farben auswählen könnt ;)
+
+Gut zu wissen:
+`#00 00 00` ist schwarz und `#FF FF FF` ist weiß. Sobald alle Werte gleich sind, ist keine Farbe mehr vorhanden als die anderen und damit handelt es sich immer um ein mehr oder weniger helles grau. Also ein `#AA AA AA` ist ein helles grau, während `#05 05 05` ein recht dunkles grau ist. 
+
 
 ## Größe
 
