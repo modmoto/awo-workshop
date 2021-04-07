@@ -257,7 +257,6 @@ Im CSS sieht das dann so aus:
 
 ```
 .padding-example {
-    width: 200px;
     padding: 30px;
 }
 
