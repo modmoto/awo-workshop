@@ -239,17 +239,8 @@ Der `<input>` tag ist etwas speziell, da er mehrere Formen annehmen kann, je nac
 ```
 
 ergibt:
-<span>Text Input:</span>
-<input type="text"></br>
 
-<span>Range Input:</span>
-<input type="range"></br>
-
-<input type="radio" value="klick1"><span>Option 1</span></br>
-<input type="radio" value="klick2"><span>Option 2</span></br>
-
-<input type="checkbox" value="check1"><span>Check 1</span></br>
-<input type="checkbox" value="check2"><span>Check 2</span></br>
+![VSCode](pictures/inputs.jpg)
 
 ## Listen `<ul>` & `<ol>`
 Es gibt zwei Arten von Listen. `<ol>` (OrderedList) ist sortiert und `<ul>` (UnorderedList) ist unsortiert. Sortiert heißt aber nicht, dass die Liste sortiert wird, es werden nur automatisch die Nummern in Zahlen vor die Elemente geschrieben. Die `<li>` (ListItem) tags werden für beide Listen verwendet.
