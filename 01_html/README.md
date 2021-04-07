@@ -147,6 +147,47 @@ Tabellen werden nicht mehr so häufig verwendet, aber für das darstellen von vi
     </tbody>
 </table>
 ```
+<table>
+    <thead>
+        <th>
+            Spalte_1
+        </th>
+        <th>
+            Spalte_2
+        </th>
+        <th>
+            Spalte_3
+        </th>
+        <th>
+            letzte Spalte
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>a</th>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td colspan="2">very big cell in two</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td rowspan="2">tall cell</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Dropdowns `<select>`
 Dropdowns werden mit dem `<select>` tag erstellt und für jede Auswahlmöglichkeit fügt man einen `<option>` tag in das select tag. 
 ```
@@ -155,6 +196,12 @@ Dropdowns werden mit dem `<select>` tag erstellt und für jede Auswahlmöglichke
     <option>Option 2</option>
 </select>
 ```
+
+ergibt:
+<select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+</select>
 
 ## Textfelder, Checkboxen und Slider`<input>`
 Der `<input>` tag ist etwas speziell, da er mehrere Formen annehmen kann, je nachdem welcher wert im `type` Attribut gesetzt wird. Davon gibt es `text`, `range`, `radio` und `checkbox`. Wie man diese Werte dann verarbeitet, kommt im Javascript-Teil. 
