@@ -240,7 +240,7 @@ Der `<input>` tag ist etwas speziell, da er mehrere Formen annehmen kann, je nac
 
 ergibt:
 
-![VSCode](pictures/inputs.jpg)
+![VSCode](pictures/inputs.JPG)
 
 ## Listen `<ul>` & `<ol>`
 Es gibt zwei Arten von Listen. `<ol>` (OrderedList) ist sortiert und `<ul>` (UnorderedList) ist unsortiert. Sortiert heißt aber nicht, dass die Liste sortiert wird, es werden nur automatisch die Nummern in Zahlen vor die Elemente geschrieben. Die `<li>` (ListItem) tags werden für beide Listen verwendet.
