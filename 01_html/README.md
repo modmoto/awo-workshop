@@ -1,6 +1,10 @@
 # HTML Basics
 HTML steht für "Hypertext Markup Language" und ist im Internet das Standardformat für das Layout von Websiten. Mit HTML beschreibt man, wo welche Elemente auf einer Webseite erscheinen sollen. Dafür schreibt man sein HTML in eine `.html` Datei und öffnet sie in einem beliebigen Browser (Chrome, Edge, Internet Explorer, etc). Der Browser weiß dann, welche Elemente er darstellen soll und wo er sie zu platzieren hat. Wichtig: HTML definiert keine Farben oder wie breit ein Element sein soll. Wie das geht, kommt in den CSS Basics. Auch kann HTML keine Dinge wie Popups darstellen oder Bilder hochladen. Dafür verwendet man Javascript, was wir ebenfalls später behandeln werden. HTML ist ausschließlich für die Formatierung und Elemente der Webseite zuständig.
 
+Siehe auch:
+
+https://github.com/modmoto/workshop-html-and-css-examples/tree/HTML
+
 ## Grundgerüst einer Webseite
 Kopiere folgenden Text in eine `.html` Datei und öffne sie mit einem Browser:
 ```
