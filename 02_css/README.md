@@ -1,5 +1,5 @@
 # CSS Basics
-hier kommen HTML basics hin
+CSS 
 
 ## class vs id
 
