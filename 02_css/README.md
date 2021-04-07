@@ -131,6 +131,34 @@ das liefert dann:
 ![VSCode](pictures/pseudo.JPG)
 
 ## Farben
+Wichtige Farbstyles sind:
+- color => legt die Schriftfarbe fest
+- border-color => legt die Farbe des Rahmens fest 
+- background-color => legt die Farbe im DIV fest
+
+Die Border muss noch mit width und style anegeben werden, sonst wird sie nicht angezeigt
+
+```
+.color-example {
+    color: red;
+}
+
+.border-color-example {
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.background-color-example {
+    background-color: red
+}
+```
+
+ergibt dann:
+
+![VSCode](pictures/colors.JPG)
+
+
 Farben können in CSS nicht nur mit normalem Text wie `green` oder `red` definiert werden, sondern auch in einem sogenanten HEX Code. Ein Hexcode wird mit `#` begonnen und hat genau 6 Zeichen. Dabei sind die ersten zwei Zahlen der Wert für rot, dann grün und dann blau. Das ist der sogenannte "RGB" Wert (rot, grün, blau). 
 
 ![VSCode](pictures/hex-reading.png)
@@ -204,8 +232,6 @@ Gut zu wissen:
 ## Abstand
 
 ## Position
-
-## Farben in Hex CODE
 
 ## CSS direkt in HTML
 Man kann auch einen style direkt an einem html element definieren. Man tut das allerdings nur sehr selten, da es schnell sehr unübersichtlich wird. Für schnelles austesten ist es allerdings gut. Hier beachten, dass auch jeder Style mit einem `;` abgeschlossen werden muss. Sobald es also mehr als 2-3 Anweisungen sind, wird es sehr unübersichtlich. Das sieht dann so aus:
