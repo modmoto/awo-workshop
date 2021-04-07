@@ -1,9 +1,9 @@
 # CSS Basics
 CSS steht für "Cascading Style Sheet" und ist auf Webseiten für Farben, Abstände und generelles Design zuständig. Man legt die regeln in einer `.css` Datei fest und importiert diese in seiner `.html` Datei. Zusammen kann der Browser dann erkennen, dass ihr wolltet, dass ein bestimmer Button grün sein soll und einen bestimmten Abstand zu einem anderen Element hat. In CSS gibt es oft sehr viele Möglichkeiten ein bestimmtes Design umzusetzen, also kann alles was hier gezeigt wird auf anderen Hilfeseiten komplett anders gelöst sein. Am Anfang geht es uns aber erst einmal darum, etwas Farbe in unser HTML zu bekommen.
 
-Siehe auch:
+Siehe auch die Datei `css-example.html` hier:
 
-https://github.com/modmoto/workshop-html-and-css-examples/tree/CSS
+https://github.com/modmoto/workshop-html-and-css-examples
 
 ## Importieren
 Man importiert das CSS File im head tag der webseite. In diesem Beispiel liegt die html Datei neben der `styles.css` Datei und wird deswegen vom Browser gefunden. Das `./` heißt für den Browser "Schaue hier dabene nach einer styles.css Datei". Man kann es auch in einen Ordner legen, dann wäre der Pfad zum Beispiel `href="./ordner/styles.css"`
