@@ -385,6 +385,10 @@ export default class Counter extends Vue {
 
 Alles was zwischen dem `<script>` tag steht ist der Programmcode, der Vue ausühren kann. Wie ihr von oben noch wisst, gibt es in Javascript Klassen. Was wir hier definieren ist eine Klasse mit Namen "App" und definieren mit `extends Vue`, dass es sich hierbei um eine Vue Komponenten handeln soll. Das `@Component({})` über der Klasse ist von Vue so vorgegeben, kopiert es einfach und nehm hin, dass es nötig ist, das kommt in bestimmten Fällen noch anders zu Geltung. Der Teil dazwischen sollte uns nun wieder sehr vertraut vorkommen, denn es ist nicht anderes als eine Klasse, wie unsere Freiwilligen Klasse von oben. Ich habe ein Attribut `counter` und eine Funktion `countUp()`. `counter` wird hier gleich auf den Wert 0 gesetzt, also braucht man ihn nicht im `constructor` beschreiben.
 
+## Eventhandler und Databinding (klick)
+
+### Eventhandler
+
 Jetzt nochmal zurück zum HTML und dem ominösen `@click` Attribut im `div`:
 ```
 <div @click="countUp()" >
@@ -393,4 +397,96 @@ Jetzt nochmal zurück zum HTML und dem ominösen `@click` Attribut im `div`:
 ```
 Hier kommt nun die Verbindung zwischen HTML und unserem Programm. Und zwar gibt es für alle HTML Elemente sognenannte "EventHandler". In unserem Fall ist das der "ClickEventHandler". Vielleicht kannst du es dir schon denken, aber dieser Eventhandler wird ausgeführt, sobald jemand auf das div klickt. Was dann passiert ist, dass der EventHandler unsere `countUp()` Funktion aufruft, die unsere `counter` Variable um eines erhöht. Es gibt noch sehr viel mehr dieser EventHandler, wie `@drag` oder `@mouseenter`, die beim ziehen eines elementes oder wenn die Maus das Element erreicht ausgelöst werden. Diese Händler sind der Grundbaustein für eine interaktive Webseite. Am häufigsten verwendet man allerdings `@click`.
 
-Die Rückrichtung von unserere `counter` Variable in unser HTML kannst du dir vermutlich auch schon denken. Im `div` gibt es mitten im Text diesen Teil: `{{ counter }}`. Wenn man in Vue im HTML `{{  }}` verwendet, wird alles dazwischen zu javascript. Ich kann also dazwischen auf meine Attribute der Klasse weiter unten zugreifen und diese Anzeigen. Ich könnte hier auch kurze Javascript Statements schreiben oder strings zusammenpacken, wie `{{ counter + " mal" }}`. Dann würde im HTML "3 mal" an der Stelle auftauchen. 
+### Databinding
+Die Rückrichtung von unserere `counter` Variable in unser HTML kannst du dir vermutlich auch schon denken. Im `div` gibt es mitten im Text diesen Teil: `{{ counter }}`. Wenn man in Vue im HTML `{{  }}` verwendet, wird alles dazwischen zu javascript. Ich kann also dazwischen auf meine Attribute der Klasse weiter unten zugreifen und diese Anzeigen. Ich könnte hier auch kurze Javascript Statements schreiben oder strings zusammenpacken, wie `{{ counter + " mal" }}`. Dann würde im HTML "3 mal" an der Stelle auftauchen. Diesen Vorgang nennt man dann "Databinding", da man die Daten an das HTML bindet.
+
+### Databinding an HTML Attribute
+Es gibt noch eine weiter Art und Weise, wie man das HTML vom Javascript aus verändern kann. Das HTML oben kann man so erweitern
+
+```
+<div @click="countUp()" >
+    Hallo zusammen, es wurde {{ counter }} mal geklickt.
+    <button :disabled="counter > 5">disabled button</button>
+</div>
+```
+Wie man sieht, wird hier in den "" eine Berechnung gemacht, ob der `counter` größer 5 ist. Stimmt das, wird true zurückgegeben und der button wird disabled. Das funktioniert nur, weil die : vor disabled Vue dazu anhalten, den Wert zwischen "" als Javascript Code anzusehen und auszuwerten. Man kann hier auch auf ein boolean property zugreifen, das man dann noch in der Klasse definieren und befüllen muss. Natürlich kann man auch andere Attribute so dynamisch ändern, wie zum Beispiel `:class` um dann zum Beispiel den Hintergrund des divs auf rot zu ändern, indem man eine neue CSS Klasse dynamisch zuweist, sobald der Counter fünf überschreitet.
+
+## V-If
+Vue bringt auch noch ein paar coole Features mit, mit denen man Einfach ins HTML eingreifen kann. Ein beliebtes Element ist `v-if` und es kann so verwendet werden:
+
+```
+<div class="hallo-welt" @click="countUp()" >
+    Hallo zusammen, es wurde {{ counter }} mal geklickt.
+    <div v-if="counter > 5">COUNTER ZU HOCH!!!</div>
+</div>
+```
+Das `v-if` bezieht sich immer auf das Element in das es reingeschrieben wird und blendet das Element aus, wenn die Bediungung in den "" nicht erfüllt ist. In unserem Fall wird die Warnung also erst erscheinen, wenn der Counter größer als 5 ist. Wie bei dem Databinding mit Doppelpunkt von oben, wird alles in den "" als Javascript code ausgewertet.
+
+Wo es ein if gibt, darf ein else nicht fehlen, also ist folgende Sache ebenfalls möglich:
+
+```
+<div class="hallo-welt" @click="countUp()" >
+    Hallo zusammen, es wurde {{ counter }} mal geklickt.
+    <div v-if="counter > 5">COUNTER ZU HOCH!!!</div>
+    <div v-else>Alles ok</div>
+</div>
+```
+
+Ähnlich wie bei unserem Javascript `if-else`, wird hier der zweite Teil nur angezeigt, wenn der erste Teil nicht zutrifft. Am Anfang sieht man nur das div "Alles OK" und wenn der Counter 5 überschreitet, wird das "Alles OK" entfernt und mit der Warnung ersetzt.
+
+Und auch wie bei Javascript gibt es das `else if`, das dann so aussehen könnte:
+```
+<div class="hallo-welt" @click="countUp()" >
+    Hallo zusammen, es wurde {{ counter }} mal geklickt.
+    <div v-if="counter > 5">COUNTER ZU HOCH!!!</div>
+    <div v-else-if="counter > 3">Gefahr</div>
+    <div v-else>Alles ok</div>
+</div>
+```
+
+## V-For
+Wenn man Listen in Vue darstellen will, kann man das mit `v-for` machen:
+
+```
+<template>
+  <div>
+    <div v-for="teilnehmer in seminarTeilnehmer" :key="teilnehmer">
+      {{ teilnehmer }}
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({})
+export default class App extends Vue {
+  seminarTeilnehmer = ['simon', 'kevin', 'marion']
+}
+```
+
+Hier haben wir in unserer Klasse eine Liste von strings, die unsere Seminarteilnehmer sind. Mit `v-for` gehe ich nun, wie bei `foreach` in javascript alle elemente der Liste durch und gebe für jedes ein `div` aus, das den teilnehmer sring mit `{{ teilnehmer }}` ausgibt. Das `:key` attribute muss hier immer gesetzt werden, damit vue mit den Listen nicht durcheinander kommt. Über den key kann Vue das einzelne `div` wieder erkennen. Hier einfach merken, dass der key einzigartig sein muss, also einfach "test" als key übergeben wird Probleme bereiten.
+
+Man kann `v-for` auch mit Objekten verwenden. Im Beispiel unserer Freiwilligen Klasse kann ich ein etwas komplexeres Listenelement bauen:
+```
+<template>
+  <div>
+    <div v-for="teilnehmer in seminarTeilnehmer" :key="teilnehmer.name">
+      <div>{{ teilnehmer.name }}:</div>
+      <div>wohnt in {{ teilnehmer.adresse }}</div>
+      <div>arbeitet in {{ teilnehmer.einsatzort }}</div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({})
+export default class App extends Vue {
+  seminarTeilnehmer = [
+      new Freiwilliger('simon', 'Pfinztal', 'AWO Karlsruhe'), 
+      new Freiwilliger('kevin', 'Berghausen', 'AWO Durlach')
+    ]
+}
+```
