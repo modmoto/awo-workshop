@@ -168,6 +168,7 @@ const zusammen2 = fuegeNamenZusammen('ramona', 'müller')
 ```
 
 Funktionen werden wir nicht allzuoft verwenden, aber so habt ihr es mal gesehen.
+
 ## Objekte
 Objekte werden in Javascript verwendet um komplexere Datenstrukturen darzustellen. Zum Beispiel hat ein Seminarteilnehmer eine Adresse, einen Namen, ein Geburtsdatum und eine Einsatzstelle. Wenn man nun das alles in Variablen speichern wollen würde, müsste man so etwas programmieren:
 
@@ -218,6 +219,178 @@ seminarTeilnehmer.forEach(teilnehmer => {
     console.log(teilnehmer.adresse)
 });
 ```
-## Clickhandler
 
-## Backend Calls
+## Klassen
+Da man sich bei den Objekten nun merken müsste, wie diese Teilnehmerstruktur aussieht, kann man sich von diesem Objekt eine sogenannte Klasse bauen. Mit der Klasse kann man dann sehr einfach wieder sein Objekt erstellen und muss sich nicht merken, dass jeder Freiwillige einen Namen, eine Adresse und eine Einsatzstelle hat. Das sieht dann so aus:
+
+```
+class Freiwilliger {
+  name: string;
+  adresse: string;
+  einsatzort: string;
+
+  constructor(name, adresse, einsatzort) {
+    this.name = name;
+    this.adresse = adresse;
+    this.einsatzort = einsatzort;
+  }
+}
+```
+
+nun kann ich mir immer neue Freiwillige erstellen, indem ich diese Klasse mit `new` so aufrufe:
+
+```
+const freiwilliger1 = new Freiwilliger('simon', 'Pfinztal', 'AWO Karlsruhe')
+const freiwilliger2 = new Freiwilliger('kevin', 'Berghausen', 'AWO Durlach')
+
+console.log(freiwilliger1.name) --> gibt simon aus
+```
+
+Das ist noch einmal um einiges kürzer uns damit sehr praktisch.
+
+Aber lass mich noch einmal schnell die Klasse von oben erklären, da gibt es noch ein paar Dinge die man wissen muss:
+
+```
+name: string;
+adresse: string;
+einsatzort: string;
+```
+Dieser Teil der Klasse definiert, dass die Klasse diese drei Attribute hat. Der Doppelpunkt danach bedeutet, dass die attribute nur strings sein dürfen. Wenn ich also `name = 1` schreiben würde, würde sich javascript beschweren. Ich kann natürlich auch andere typen wählen, wie `geburtsjahr: number`.
+
+Der nächste Block ist der sogenannte `constructor`:
+```
+constructor(name, adresse, einsatzort) {
+    this.name = name;
+    this.adresse = adresse;
+    this.einsatzort = einsatzort;
+}
+```
+
+Der `constructor` ist die Funktion einer Klasse, die aufgerufen wird, wenn ich den `new` Befehl von oben verwende. Wie bei normalen Funktionen muss ich die Parameter angeben um den constructor aufrufen zu können. Ein kleiner Unterschied ist, dass ich im constructor nichts mit `return` zurückgeben muss, dass passiert im Hintergrund automatisch. Ich bekomme also ein neues Objekt hirvorn zurück.
+
+Fehlt nur noch das `this.`, das vor den Attributen im Konstruktor steht. `this.` macht dem browser klar, dass er das Attribut der Klasse verwenden soll und nicht eine andere variable. Das wirkt etwas seltsam, weil man hier nun zwei gleichnamige Variablen haben kann (eine mit `this.` und eine ohne), diese aber unterschiedliche Werte haben können. Merkt euch einfach, dass ihr in Klassen imemr mit `this.` arbeiten müsst, wenn ihr etwas ändern wollt.
+
+Weiterhin kann man Klassen mit Funktionen erweitern, die einem das Leben leichter machen. Zum Beispiel:
+
+```
+class Freiwilliger {
+  name: string;
+  adresse: string;
+  einsatzort: string;
+
+  constructor(name, adresse, einsatzort) {
+    this.name = name;
+    this.adresse = adresse;
+    this.einsatzort = einsatzort;
+  }
+
+  getCompleteInfo() {
+      return `${this.name} ${this.adresse} ${this.einsatzort}`
+  }
+}
+```
+
+Wie die Funktionen weiter oben kann ich nun an meinen Freiwilligen diese Hilfsfunktion aufrufen und muss mir diese nicht überall neu erstellen:
+```
+const freiwilliger1 = new Freiwilliger('simon', 'Pfinztal', 'AWO Karlsruhe')
+
+console.log(freiwilliger1.getCompleteInfo()) --> gibt 'simon Pfinztal AWO Karlsruhe' aus
+```
+
+Auch das erspart einem auf Dauer extrem viel Code und deswegen werden Klassen zusammen mit Funktionen sehr häufig verwendet.
+
+# Vue
+Jetzt kennen wir einige Dinge aus Javascript, also beginnen wir mit ein paar Erklärungen zu Vue:
+
+## .vue Dateien
+In Vue erstellt man keine .html Dateien, sondern .vue Dateien. Eine .vue Datei vereint HTML, CSS und Javascript in einem und sieht so aus:
+
+```
+<template>
+  <div class="hallo-welt" @click="countUp()" >
+    Hallo zusammen, es wurde {{ counter }} mal geklickt.
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({})
+export default class CounterComponent extends Vue {
+
+  counter = 0;
+
+  countUp() {
+    this.counter = this.counter + 1;
+  }
+}
+
+</script>
+
+<style scoped>
+  .hallo-welt {
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+</style>
+```
+
+Bei Vue gilt das sogenannte "Komponenten" Prinzip und alle .vue Dateien sind für sich abgeschlossene Komponenten. Ich könnte mir also in Vue einen Button stylen und mit Funktionen versehen und diesen dann in jedem anderen Vue Projekt wieder verwenden. Wenn du genau hinsiehst, wirst du HTML, CSS und Javascript in der .vue Datei von oben wiedererkennen. Der erste Teil ist unser HTML:
+
+```
+<template>
+  <div class="hallo-welt" @click="countUp()" >
+    Hallo zusammen, es wurde {{ counter }} mal geklickt.
+  </div>
+</template>
+```
+
+Das `<template>` tag ist ein spezielles tag, das Vue dazu verwendet dem Browser zu sagen, dass es hier eine Komponente definiert. Merkd dir einfach, dass bei Vue um das HTML immer ein `<template>` tag gemacht werden muss. Wenn du dann weiterlist siehst du, dass die Komponente nur einen div container ausgibt, in dem "Hallo zusammen" steht. Zum `@click` komme ich später, aber grundsätzlich ist das alles sehr ähnlich zu normalen HTML. Du kannst nun in das div wie gewohnt buttons, andere divs, Tabellen und so weiter einfügen und Vue wird diese Elemente wie in HTML ausgeben.
+
+Weiter kann man in Vue auch Styles definieren. Das ist der letzte Teil des Beispiels und sollte dir sehr bekannt vorkommen:
+
+```
+<style scoped>
+  .hallo-welt {
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+</style>
+```
+
+Auch hier kannst du alle möglichen CSS Eigenschaften verwenden, die du sonst in normalen CSS auch verwenden würdest. Und da diese CSS Eigenschaften in derselben Datei stehen, kannst du diese Datei wo anders hinkopieren und es wird exakt so aussehen, wie du es dir vorgestellt hast. Das Attribut `scoped` bedeutet, dass der Style nur in dieser Datei gilt, also musst du dir keine Sorgen machen, dass du eine Klasse zwei mal definierst und auf einmal ein anderes Element anders aussieht.
+
+Der etwas speziellere Teil ist der Javascript teil in der Mitte:
+
+```
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({})
+export default class Counter extends Vue {
+
+  counter = 0;
+
+  countUp() {
+    this.counter = this.counter + 1;
+  }
+}
+
+</script>
+```
+
+Alles was zwischen dem `<script>` tag steht ist der Programmcode, der Vue ausühren kann. Wie ihr von oben noch wisst, gibt es in Javascript Klassen. Was wir hier definieren ist eine Klasse mit Namen "App" und definieren mit `extends Vue`, dass es sich hierbei um eine Vue Komponenten handeln soll. Das `@Component({})` über der Klasse ist von Vue so vorgegeben, kopiert es einfach und nehm hin, dass es nötig ist, das kommt in bestimmten Fällen noch anders zu Geltung. Der Teil dazwischen sollte uns nun wieder sehr vertraut vorkommen, denn es ist nicht anderes als eine Klasse, wie unsere Freiwilligen Klasse von oben. Ich habe ein Attribut `counter` und eine Funktion `countUp()`. `counter` wird hier gleich auf den Wert 0 gesetzt, also braucht man ihn nicht im `constructor` beschreiben.
+
+Jetzt nochmal zurück zum HTML und dem ominösen `@click` Attribut im `div`:
+```
+<div @click="countUp()" >
+    Hallo zusammen, es wurde {{ counter }} mal geklickt.
+</div>
+```
+Hier kommt nun die Verbindung zwischen HTML und unserem Programm. Und zwar gibt es für alle HTML Elemente sognenannte "EventHandler". In unserem Fall ist das der "ClickEventHandler". Vielleicht kannst du es dir schon denken, aber dieser Eventhandler wird ausgeführt, sobald jemand auf das div klickt. Was dann passiert ist, dass der EventHandler unsere `countUp()` Funktion aufruft, die unsere `counter` Variable um eines erhöht. Es gibt noch sehr viel mehr dieser EventHandler, wie `@drag` oder `@mouseenter`, die beim ziehen eines elementes oder wenn die Maus das Element erreicht ausgelöst werden. Diese Händler sind der Grundbaustein für eine interaktive Webseite. Am häufigsten verwendet man allerdings `@click`.
+
+Die Rückrichtung von unserere `counter` Variable in unser HTML kannst du dir vermutlich auch schon denken. Im `div` gibt es mitten im Text diesen Teil: `{{ counter }}`. Wenn man in Vue im HTML `{{  }}` verwendet, wird alles dazwischen zu javascript. Ich kann also dazwischen auf meine Attribute der Klasse weiter unten zugreifen und diese Anzeigen. Ich könnte hier auch kurze Javascript Statements schreiben oder strings zusammenpacken, wie `{{ counter + " mal" }}`. Dann würde im HTML "3 mal" an der Stelle auftauchen. 
