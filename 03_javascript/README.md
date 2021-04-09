@@ -385,7 +385,7 @@ export default class Counter extends Vue {
 
 Alles was zwischen dem `<script>` tag steht ist der Programmcode, der Vue ausühren kann. Wie ihr von oben noch wisst, gibt es in Javascript Klassen. Was wir hier definieren ist eine Klasse mit Namen "App" und definieren mit `extends Vue`, dass es sich hierbei um eine Vue Komponenten handeln soll. Das `@Component({})` über der Klasse ist von Vue so vorgegeben, kopiert es einfach und nehm hin, dass es nötig ist, das kommt in bestimmten Fällen noch anders zu Geltung. Der Teil dazwischen sollte uns nun wieder sehr vertraut vorkommen, denn es ist nicht anderes als eine Klasse, wie unsere Freiwilligen Klasse von oben. Ich habe ein Attribut `counter` und eine Funktion `countUp()`. `counter` wird hier gleich auf den Wert 0 gesetzt, also braucht man ihn nicht im `constructor` beschreiben.
 
-## Eventhandler und Databinding (klick)
+## HTML und Javascript verbinden
 
 ### Eventhandler
 
