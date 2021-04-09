@@ -8,8 +8,6 @@ Lade dir zuerst dieses Projekt herunter und befolge die Installationsanleitungen
 
 https://github.com/modmoto/workshop-website-vue
 
-Lies am besten auch dort die Einführung zu Vue durch. 
-
 ## Grundsätze des Programmierens
 Ein Programm ist nichts weiter als eine Datei mit Text, wie html oder css. In diese Datei schreibt man Befehle für den Computer, der diese dann von oben nach unten abarbeitet. Zum Beispiel kann man dem PC in einer Zeile sagen, dass er ein Bild runterladen soll, in der nächsten, dass er das Bild grün einfärben soll und dann in der übernächsten das Bild an eine Email Adresse sendet. Es ist wichtig hier genau zu sein, da der Computer falsch geschriebene Befehle einfach nicht ausführen kann. 
 
