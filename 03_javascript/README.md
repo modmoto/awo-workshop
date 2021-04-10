@@ -3,8 +3,23 @@ Nun können wir schon ein recht ansehnliche Webseite bauen, allerdings kann dies
 
 Eine dieser bekannten Frameworks ist "Vue" (View ausgesprochen) und bietet allerlei tools, die eine dynamische Webseite einfach programmierbar machen. Wenn du noch keine Erfahrung mit Webseiten programmieren hast, wird dir vermutlich nicht auffallen, was hier alles im Hintegrund passiert und das ist auch gut so. Aber ob du nun "reines" Javascript oder Vue lernst, sollte keinen Unterschied machen. Heutzutage wird kaum noch reines Javascript programmiert, sonder immer auf Frameworks wie Vue, Angular (Google) oder React (Facebook) gesetzt. Vue hat zum Ziel Webentwicklung einfacher zu machen und bekommt das meiner Meinung nach von den drei großen Frameworks am besten hin. Wenn du schon mit Javascript auf Webseiten gearbeitet hast, bin ich mir sicher, dass du einige Verbesserungen sehen wirst.
 
+## Setup
+Erstelle folgende HTML Datei
+```
+<!doctype html>
+<html>
+    <head>
+        <script>
+            alert('hallo, das ist javascript')
+        </script>
+    </head>
+</html>
+```
+
+Sobald du die HTML Datei öffnest, wird das skript ausgeführt und du hast deine erste Zeile programmiert :)
+
 ## Grundsätze des Programmierens
-Ein Programm ist nichts weiter als eine Datei mit Text, wie html oder css. In diese Datei schreibt man Befehle für den Computer, der diese dann von oben nach unten abarbeitet. Zum Beispiel kann man dem PC in einer Zeile sagen, dass er ein Bild runterladen soll, in der nächsten, dass er das Bild grün einfärben soll und dann in der übernächsten das Bild an eine Email Adresse sendet. Es ist wichtig hier genau zu sein, da der Computer falsch geschriebene Befehle einfach nicht ausführen kann. 
+Ein Programm ist nichts weiter als eine Datei mit Text, wie html oder css. In diese Datei schreibt man Befehle für den Computer, der diese dann von oben nach unten abarbeitet. Zum Beispiel kann man dem PC in einer Zeile sagen, dass er ein Bild runterladen soll, in der nächsten, dass er das Bild grün einfärben soll und dann in der übernächsten das Bild an eine Email Adresse sendet. Es ist wichtig hier genau zu sein, da der Computer falsch geschriebene Befehle einfach nicht ausführen kann. Hier wird das Javascript in die Webseite eingebettet, damit es ausgeführt wird, sobald wir die Webseite öffnen.
 
 ## Variablen
 Keine Angst, das hat nichts mit Mathematik zu tun ;)
