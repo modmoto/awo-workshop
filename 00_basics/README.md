@@ -18,7 +18,7 @@ Weiterhin gibt es ein cooles Element, mit dem ihr Elemente auf der Seite auswäh
 ## Git in VS
 
 ### Versionskontrolle
-Um unsere Dateien Online zu speichern, verwenden wir GIT. Der Vorteil von GIT gegenüber zu anderen Cloud Lösugnen ist, dass ich immer alle Stände wieder abrufen kann. Weiterhin brauchen wir es später um unsere Webseite auf Heroku zu laden und dort bereitzustellen.
+Um unsere Dateien Online zu speichern, verwenden wir GIT. Der Vorteil von GIT gegenüber zu anderen Cloud Lösugnen ist, dass ich immer alle Stände wieder abrufen kann, es super einfach ist mit mehrere Personen am selben Projekt zu arbeiten und wir verwenden es später um unsere Webseite auf Heroku zu laden und dort bereitzustellen.
 
 Öffne den GIT Bereich und lade dein Project auf Github hoch. Du musst dich dann bei Github einloggen, damit alles mit deinem Accound verknüpft ist:
 
