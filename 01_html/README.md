@@ -23,7 +23,7 @@ Kopiere folgenden Text in eine `.html` Datei und öffne sie mit einem Browser:
 
 Das ergibt dann:
 
-![VSCode](pictures/Basics.JPG)
+![](pictures/Basics.JPG)
 
 herzlichen Grlückwunsch, du hast deine erste Webseite erstellt =) :clap::clap::clap:
 
@@ -76,7 +76,7 @@ Das hier:
 
 ergibt dann das hier (die Farben habe ich hinzugefügt um es klarer zu machen, wie genau das geht, kommt im CSS Teil):
 
-![VSCode](pictures/divs-spans.JPG)
+![](pictures/divs-spans.JPG)
 
 
 ## Überschriften (`<h1>` etc)
@@ -89,7 +89,7 @@ Mit den tags `<h1>` bis `<h5>` kann man überschriften definieren, die mit steig
 ```
 
 ergibt:
-![VSCode](pictures/headers.JPG)
+![](pictures/headers.JPG)
 
 ## Buttons `<button>`
 Mit dem Button tag kann man Buttons darstellen. Wie auch span werden buttons in einer Reihe nebeneinander dargestellt.
@@ -224,7 +224,7 @@ Dropdowns werden mit dem `<select>` tag erstellt und für jede Auswahlmöglichke
 
 ergibt:
 
-![VSCode](pictures/options.png)
+![](pictures/options.png)
 
 ## Textfelder, Checkboxen und Slider`<input>`
 Der `<input>` tag ist etwas speziell, da er mehrere Formen annehmen kann, je nachdem welcher wert im `type` Attribut gesetzt wird. Davon gibt es `text`, `range`, `radio` und `checkbox`. Wie man diese Werte dann verarbeitet, kommt im Javascript-Teil. 
@@ -244,7 +244,7 @@ Der `<input>` tag ist etwas speziell, da er mehrere Formen annehmen kann, je nac
 
 ergibt:
 
-![VSCode](pictures/inputs.JPG)
+![](pictures/inputs.JPG)
 
 ## Listen `<ul>` & `<ol>`
 Es gibt zwei Arten von Listen. `<ol>` (OrderedList) ist sortiert und `<ul>` (UnorderedList) ist unsortiert. Sortiert heißt aber nicht, dass die Liste sortiert wird, es werden nur automatisch die Nummern in Zahlen vor die Elemente geschrieben. Die `<li>` (ListItem) tags werden für beide Listen verwendet.

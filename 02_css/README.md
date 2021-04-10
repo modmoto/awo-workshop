@@ -132,7 +132,7 @@ Ein weiterer beliebter Pseude Selektor sind die `:nth-child(n)` der das n-te Kin
 
 das liefert dann:
 
-![VSCode](pictures/pseudo.JPG)
+![](pictures/pseudo.JPG)
 
 ## Farben
 Wichtige Farbstyles sind:
@@ -160,12 +160,12 @@ Die Border muss noch mit width und style anegeben werden, sonst wird sie nicht a
 
 ergibt dann:
 
-![VSCode](pictures/colors.JPG)
+![](pictures/colors.JPG)
 
 
 Farben können in CSS nicht nur mit normalem Text wie `green` oder `red` definiert werden, sondern auch in einem sogenanten HEX Code. Ein Hexcode wird mit `#` begonnen und hat genau 6 Zeichen. Dabei sind die ersten zwei Zahlen der Wert für rot, dann grün und dann blau. Das ist der sogenannte "RGB" Wert (rot, grün, blau). 
 
-![VSCode](pictures/hex-reading.png)
+![](pictures/hex-reading.png)
 
 Allerdings gehen die Zahlen eigentlich von 0-255. Ab 100 sind das mehr als zwei Zeichen, weswegen die Zahlen "HEX" codiert werden. HEX ist ein Zahlenraum, der nicht von 0-9 geht, sondern von 0-F. Man führt Hex Zahlen dann auch oft mi 0x oder # an, um klarzumachen, dass es sich um eine HEX Codierung handelt. 
 
@@ -251,11 +251,11 @@ Wird mit Pixel oder Prozent angegeben. Die % bezieht sich immer auf das Element 
 ## Abstand
 Abstand zwischen zwei Elementen kann mit `padding` oder `margin` generiert werden. Dabei ist `margin` der Abstand nach außen und `padding` der Abstand nach innen. Wenn du du also bei einem Button willst, dass er eher so aussieht:
 
-![VSCode](pictures/padding.JPG)
+![](pictures/padding.JPG)
 
 Wenn du möchtest, dass er mehr abstand zu seinen nachbarn hat, verwendet margin, wie hier:
 
-![VSCode](pictures/margin.JPG)
+![](pictures/margin.JPG)
 
 Im CSS sieht das dann so aus:
 
