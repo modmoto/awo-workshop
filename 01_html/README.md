@@ -107,7 +107,7 @@ ergibt:
 
 ![](pictures/buttons.JPG)
 
-## Links `<link>`
+## Links `<a>`
 Um klickbare Links darzustellen, kann man den a tag verwenden. Weiterhin muss man das Ziel mit dem Attribut `href` angeben.
 ```html
 <a href="https://google.com">
@@ -274,6 +274,3 @@ HTML ist sehr "robust" was Fehler angeht. Wenn man mal vergisst einen tag zu sch
 
 ## Nützliche Links
 https://www.w3schools.com/
-
-
-
