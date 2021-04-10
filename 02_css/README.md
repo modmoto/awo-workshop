@@ -7,7 +7,7 @@ https://github.com/modmoto/workshop-html-and-css-examples
 
 ## Setup
 CSS wird im `<head>` der html Datei definiert. Man kann es auch in einer separaten Datei machen, aber wir machen es uns lieber einfach.
-```
+```html
 <head>
     ...
     <style>
@@ -22,7 +22,7 @@ Hier zwischen den `<style>` tag schreiben wir nun unser CSS
 
 ## Syntax
 Eine CSS Anweisung ist sehr simpel und besteht im Grunde nur aus zwei teilen:
-```
+```css
 h3 {
     color: green;
     font-size: 20px;
@@ -36,7 +36,7 @@ Selektoren sind wie oben beschrieben der Text, der vor dem `{` kommt. Hier kann 
 
 ### Class selektor
 Der class Selektor beginnt immer mit einem `.` vor dem Selektor. Damit sagen wir dem Browser, dass er nach HTML Elemente suchen soll, die die Klasse "primary-button" haben. Der Klassenname kann hier frei gewählt werden und am besten sucht man sich einen aus, der gut zum Element passt, also nicht `a1` und `a2` zum Beispiel.
-```
+```css
 .primary-button {
     color: green;
     font-size: 20px;
@@ -47,7 +47,7 @@ Was ist dann eine Klasse?
 
 Die definiert man einfach im HTML mit dem `class` attribute. Wichtig: Hier braucht man den `.` nicht! Das sieht dann so aus:
 
-```
+```html
 <button class="primary-button">
     Download
 </button>
@@ -55,14 +55,14 @@ Die definiert man einfach im HTML mit dem `class` attribute. Wichtig: Hier brauc
 
 ### Id selektor
 Der id Selektor funktioniert genauso wie der class Selektor, mit dem Unterschied, dass der Selektor im CSS mit einem `#` beginnt und im HTML das `id` attribute gesetzt werden muss.
-```
+```css
 #main-menu {
     color: blue;
     font-size: 50px;
 }
 ```
 
-```
+```html
 <div id="main-menu">
     <div>Home</div>
     <div>Impressum</div>
@@ -74,7 +74,7 @@ Der wichtige Unterschied zwischen class und id ist, dass die id im HTML nur einm
 
 ### Multiselektoren
 CSS kann auch mehrere Elemete gleichzeitig markieren, das geht dann mit einem Komma:
-```
+```css
 .button, .primary-button {
     color: blue;
 }
@@ -83,14 +83,14 @@ Das wirkt sich nun auf beide Klassen `button` und `primary-button` aus.
 
 ### Mehrere Klassen pro Element
 Umgekehrt kann man aber auch im HTML einem Element mehrere Klassen zuweisen. Dafür muss man im HTML einfach mehrere Klassen in das class Attribute schreiben:
-```
+```html
 <button class="button primary-button">
     Download
 </button>
 ```
 
 Die Styles könnten so aussehen:
-```
+```css
 .button {
     font-size: 20px;
 }
@@ -103,7 +103,7 @@ Die Styles könnten so aussehen:
 
 ### Nested Selektoren
 Man kann Selektoren auch verschachteln. Hierbei nimmt man einfach nur ein Leerzeichen zwischen den selektoren
-```
+```css
 .menu div {
     color: blue;
 }
@@ -113,14 +113,14 @@ Hier wird dann in der Klasse menu alle divs genommen und blau gefärbt. Andere d
 
 ### Pseudo Selektoren
 Pseudo Selektoren sind spezielle Selektoren, die auf eine bestimmte Bedingung reagieren. Ein sehr beliebter davon ist der `:hover` Selektor, der verwendet wird, um zum Beispiel die Farbe eines Buttons zu ändern, wenn die Mouse über den Button "hovert". Ein Pseudo selektor beginnt immer mit `:`. Das sieht dann so aus:
-```
+```css
 .primary-button:hover {
     color: deeppink;
 }
 ```
 Ein weiterer beliebter Pseude Selektor sind die `:nth-child(n)` der das n-te Kind eines Elements auswählt. Also `:nth-child(2)` wäre dann das zweite element in einem element. Damit kann man auch abwechselnd stylen, wenn man anstelle einer Zahl `even` oder `odd` verwendet. Dann werden alle geraden bzw ungerade elemente ausgewählt
 
-```
+```css
 #menu div:nth-child(2) {
     background-color: blue;
 }
@@ -142,7 +142,7 @@ Wichtige Farbstyles sind:
 
 Die Border muss noch mit width und style anegeben werden, sonst wird sie nicht angezeigt
 
-```
+```css
 .color-example {
     color: red;
 }
@@ -237,7 +237,7 @@ Gut zu wissen:
 
 Wird mit Pixel oder Prozent angegeben. Die % bezieht sich immer auf das Element außen rum. Also wenn das Element außen 100 breit ist und ein Kind `width: 50%;` hat, ist es 50 Pixel breit. Beispiel dazu:
 
-```
+```css
 .container {
     width: 100px;
     height: 150px;
@@ -259,7 +259,7 @@ Wenn du möchtest, dass er mehr abstand zu seinen nachbarn hat, verwendet margin
 
 Im CSS sieht das dann so aus:
 
-```
+```css
 .padding-example {
     padding: 30px;
 }
@@ -271,7 +271,7 @@ Im CSS sieht das dann so aus:
 
 Man kann `padding` und `margin` auch mit einem suffix von `-top`, `-bottom`, `-left`, und `-right` angeben, um nur eine bestimmte Seite zu verändern:
 
-```
+```css
 .mixed-example {
     margin-left: 20px;
     margin-right: 20px;
@@ -284,7 +284,7 @@ Man kann `padding` und `margin` auch mit einem suffix von `-top`, `-bottom`, `-l
 ## CSS direkt in HTML
 Man kann auch einen style direkt an einem html element definieren. Man tut das allerdings nur sehr selten, da es schnell sehr unübersichtlich wird. Für schnelles austesten ist es allerdings gut. Hier beachten, dass auch jeder Style mit einem `;` abgeschlossen werden muss. Sobald es also mehr als 2-3 Anweisungen sind, wird es sehr unübersichtlich. Das sieht dann so aus:
 
-```
+```html
 <div style="border: 1px solid red; background-color: aquamarine;">
     gestyled
 </div>

@@ -7,7 +7,7 @@ https://github.com/modmoto/workshop-html-and-css-examples
 
 ## Grundgerüst einer Webseite
 Kopiere folgenden Text in eine `.html` Datei und öffne sie mit einem Browser:
-```
+```html
 <!doctype html>
 <html>
     <head>
@@ -30,18 +30,18 @@ herzlichen Grlückwunsch, du hast deine erste Webseite erstellt =) :clap::clap::
 ### HTML - Elemente
 Wie du oben siehst, besteht HTML aus vielen Textstücken, die mit `<>` eingeschlossen sind. Diese Elemente nennt man "HTML-tags". Ein tag hat immer einen Anfang und ein Ende. Das Ende wird mit einem `/` vor dem Tag gekennzeichnet. Alles dazwischen liegt in dem Element und wir vom Browser dann in diesem Element dargestellt. In unserem Beispiel ist das einfach ein Text in dem `<body>` tag.
 
-```
+```html
 <body> --> Start
     Hallo Seminar
 </body> --> Ende
 ```
 
 In manchen Fällen kann man den tag auch direkt wieder schließen, wenn man keine Elemente in dem Element darstellen will. Dafür kommt das `/` ans Ende des ersten tags. Das sieht dann so aus:
-```
+```html
 <body />
 ```
 ist dasselbe wie
-```
+```html
 <body>
 </body>
 ```
@@ -60,7 +60,7 @@ Der Body ist der komplette Inhalt der WEbseite. Hier werdet ihr Text, Bilder und
 In HTML gibt es ein paar unterschiedliche Container, von denen div und span die wichtigsten sind. Ein Container ist ein Block, in dem ihr andere Elemente, wie Bilder oder Text darstellen könnt. Normalerweiße ist eine Webseite aus extrem vielen divs und spans aufgebaut, die in einander verschachtelt sind und somit dann menüs, bildergalerien oder andere komplexere Dinge darstellen. Das div ist dabei das häufigst verwendete element. Der unterschied von div zu span ist im Grunde nur der, dass das div immer die ganze Seite des Browsers einnimmt, während das span hintereinandergereiht und mit Leerzeichen abgetrennt wird. Mit einem div generiert man also eine neue Zeile, während man mit einem span in derselben Zeile weitermachen kann.
 
 Das hier:
-```
+```html
 <div>
     div und spans
 </div>
@@ -82,7 +82,7 @@ ergibt dann das hier (die Farben habe ich hinzugefügt um es klarer zu machen, w
 ## Überschriften (`<h1>` etc)
 Mit den tags `<h1>` bis `<h5>` kann man überschriften definieren, die mit steigender Zahl immer kleiner werden. Also h1 ist für die primäre Überschrift und h2 für ein sekundäres Kapitel.
 
-```
+```html
 <h1>Headline 1</h1>
 <h2>Headline 2</h2>
 <h3>Headline 3</h3>
@@ -93,7 +93,7 @@ ergibt:
 
 ## Buttons `<button>`
 Mit dem Button tag kann man Buttons darstellen. Wie auch span werden buttons in einer Reihe nebeneinander dargestellt.
-```
+```html
 <button>
     click me
 </button>
@@ -115,7 +115,7 @@ ergibt:
 
 ## Links `<link>`
 Um klickbare Links darzustellen, kann man den a tag verwenden. Weiterhin muss man das Ziel mit dem Attribut `href` angeben.
-```
+```html
 <a href="https://google.com">
     hier gehts zu google
 </a>
@@ -128,7 +128,7 @@ ergibt:
 
 ## Tabellen `<table>`
 Tabellen werden nicht mehr so häufig verwendet, aber für das darstellen von vielen Daten auf einmal, machen sie immer noch Sinn. Tabellen haben zwei Sektionen, den `<thead>` und den `<tbody>`. Im thead hat man meistens die BEschreibungen der Spalten und diese werden standardmäßig auch dicher formatiert, damit man es besser erkennt. Für jede Überschrift nimmt man einen `<th>` tag der die Überschrift definiert. Im tbody definiert man dann für jede Reihe eine `<tr>` (TableRow) und für jede Zelle in einer Reihe definiert man ein `<td>` (TableData) element. Wenn man eine Zelle über mehrere Spalten/Reihen ziehen möchte, kann man das mit dem Attribut `rowspan` bzw `colspan` machen. Dann wird die Zelle rechts daneben oder darunter mit dem Inhalt der Zelle erweitert. Am besten mal ein bisschen damit rumspielen, dann wird das klarer.
-```
+```html
 <table>
     <thead>
         <th>
@@ -215,7 +215,7 @@ ergibt:
 
 ## Dropdowns `<select>`
 Dropdowns werden mit dem `<select>` tag erstellt und für jede Auswahlmöglichkeit fügt man einen `<option>` tag in das select tag. 
-```
+```html
 <select>
     <option>Option 1</option>
     <option>Option 2</option>
@@ -228,18 +228,18 @@ ergibt:
 
 ## Textfelder, Checkboxen und Slider`<input>`
 Der `<input>` tag ist etwas speziell, da er mehrere Formen annehmen kann, je nachdem welcher wert im `type` Attribut gesetzt wird. Davon gibt es `text`, `range`, `radio` und `checkbox`. Wie man diese Werte dann verarbeitet, kommt im Javascript-Teil. 
-```
+```html
 <span>Text Input:</span>
-<input type="text"></br>
+<input type="text"><br />
 
 <span>Range Input:</span>
-<input type="range"></br>
+<input type="range"><br />
 
-<input type="radio" value="klick1"><span>Option 1</span></br>
-<input type="radio" value="klick2"><span>Option 2</span></br>
+<input type="radio" value="klick1"><span>Option 1</span><br />
+<input type="radio" value="klick2"><span>Option 2</span><br />
 
-<input type="checkbox" value="check1"><span>Check 1</span></br>
-<input type="checkbox" value="check2"><span>Check 2</span></br>
+<input type="checkbox" value="check1"><span>Check 1</span><br />
+<input type="checkbox" value="check2"><span>Check 2</span><br />
 ```
 
 ergibt:
@@ -248,7 +248,7 @@ ergibt:
 
 ## Listen `<ul>` & `<ol>`
 Es gibt zwei Arten von Listen. `<ol>` (OrderedList) ist sortiert und `<ul>` (UnorderedList) ist unsortiert. Sortiert heißt aber nicht, dass die Liste sortiert wird, es werden nur automatisch die Nummern in Zahlen vor die Elemente geschrieben. Die `<li>` (ListItem) tags werden für beide Listen verwendet.
-```
+```html
 <ul>
     <li>item 1</li>
     <li>item 2</li>

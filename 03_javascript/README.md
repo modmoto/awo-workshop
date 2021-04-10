@@ -5,7 +5,7 @@ Eine dieser bekannten Frameworks ist "Vue" (View ausgesprochen) und bietet aller
 
 ## Setup
 Erstelle folgende HTML Datei
-```
+```html
 <!doctype html>
 <html>
     <head>
@@ -28,7 +28,7 @@ Variablen sind in jeder Programmiersprache vorhanden und machen es dir möglich 
 
 Wenn du eine Variable erstellen willst, machst du das mit `const` oder `let`.
 
-```
+```js
 const name = 'simon'
 let nachName = 'heiss'
 
@@ -38,7 +38,7 @@ console.log(nachName) --> gibt "heiss" aus
 
 Der Unterschied von `const` zu `let` ist, dass man `const` (steht für constant/Kontante) nur einmal befüllen darf. Also das hier geht nicht:
 
-```
+```js
 const name = 'simon'
 name = 'achne doch nicht' --> Fehler
 ```
@@ -53,13 +53,13 @@ Variablen können in Javascript 7 verschiedene typen haben, die für uns wichtig
 
 Das ist wichtig zu wissen, da man verschiedene Typen nicht mixen sollte. Das hier geht:
 
-```
+```js
 const a = 2
 const b = 5
 const summe = a + b
 ```
 Das hier ergibt aber keinen Sinn:
-```
+```js
 const istEingeloggt = true
 const summe = 5
 const wasAuchImmer = istEingeloggt + summe
@@ -69,7 +69,7 @@ Da beschwert sich dann javascript und ihr bekommt komische Ergebnisse.
 ## Stringoperationen
 Strings werden häufig verwendet und zusammengesteckt, wenn man Nachrichten an den Nutzer ausgeben möchte. Das geht bei strings auf 2 verschiedene Arten:
 
-```
+```js
 const name = 'simon'
 const nachName = 'heiss'
 
@@ -84,7 +84,7 @@ mit dem `+` hat man etwas mehr Schreibarbeit, weswegen oft der weg mit den klamm
 
 ## If
 Mit einem if kann man bestimmte Teile eines Programmes ausführen, wenn eine bestimtme Bedinung zutrifft. Zum Beispiel hier geben wir je nach Inhalt in der Variable `name` eine andere Nachricht aus.
-```
+```js
 const name = 'simon'
 
 if (name === 'simon') {
@@ -97,7 +97,7 @@ Wenn der Teil hinter dem if nicht stimmt, wird der zweig bei `else` ausgeführt.
 
 Man kann auch andere Vergleiche machen, wie `>`, `>==`, `<` oder `<==`. Man kann hier auch eine variable mit boolean wert einfach ohne Vergleich angeben:
 
-```
+```js
 const istEingeloggt = true
 if (istEingeloggt) {
     ....
@@ -106,7 +106,7 @@ if (istEingeloggt) {
 
 ist dasselbe wie:
 
-```
+```js
 const istEingeloggt = true
 if (istEingeloggt === true) {
     ....
@@ -116,7 +116,7 @@ if (istEingeloggt === true) {
 ## Arrays
 In Javascript gibt es neben einzelnen Variablen auch Gruppen vor Variablen, die man `array` nennt. Das kann zum Beispiel ein array von string sein, die alle Namen der Seminarteilnehmer enthält.
 
-```
+```js
 const seminarTeilnehmer = ['mark', 'ramona', 'kevin']
 const noten = [1, 3, 6, 3]
 ```
@@ -141,7 +141,7 @@ console.log(letztesElement) --> gibt 'neuling' aus
 
 ## For
 Ein for kann man verwenden, wenn man für alle Elemente eines Arrays etwas tun möchte. Zum Beispiel kann man so alle Teilnehmer ausgeben:
-```
+```js
 for (let i = 0; i < 3; i++) {
    console.log(seminarTeilnehmer[i]);
 }
@@ -156,7 +156,7 @@ Im for gibt es drei Teile in den runden Klammern, die folgende Bedeutung haben:
 
 Den Befehl oben kann man also ohne for so schreiben:
 
-```
+```js
 console.log(seminarTeilnehmer[0]); --> i = 0
 console.log(seminarTeilnehmer[1]); --> i = 1
 console.log(seminarTeilnehmer[2]); --> i = 2
@@ -166,7 +166,7 @@ Das ist bei 3 Einträgen noch möglich, aber wenn man ein paar tausend Einträge
 
 Da for manchmal etwas kompliziert sein kann (das i ist schon etwas nervig auf dauer), gibt es eine Möglichkeit, das ohne i zu schreiben, die auch deutlich häufiger angewandt wird:
 
-```
+```js
 seminarTeilnehmer.forEach(teilnehmer => {
     console.log(teilnehmer)
 });
@@ -176,7 +176,7 @@ Das sieht mit den Pfeilen und Klammern am Anfang etwas wild aus, lässt sich abe
 ## Funktionen
 Häufig hat man das Problem, dass man ähnliche Probleme merhmals lösen muss und dann immer wieder Code kopieren muss. Um das zu umgehen, kann man sich eigene Funktionen schreiben, die Dinge für einen übernehmen. Zum Beispiel:
 
-```
+```js
 function fuegeNamenZusammen(vorname, nachname) {
     return `${vorname} ${nachName}`
 }
@@ -190,7 +190,7 @@ Funktionen werden wir nicht allzuoft verwenden, aber so habt ihr es mal gesehen.
 ## Objekte
 Objekte werden in Javascript verwendet um komplexere Datenstrukturen darzustellen. Zum Beispiel hat ein Seminarteilnehmer eine Adresse, einen Namen, ein Geburtsdatum und eine Einsatzstelle. Wenn man nun das alles in Variablen speichern wollen würde, müsste man so etwas programmieren:
 
-```
+```js
 const name1 = 'simon'
 const adresse1 = 'Pfinztal'
 const einsatzstelle1 = 'AWO Karlsruhe'
@@ -202,7 +202,7 @@ const einsatzstelle2 = 'AWO Durlach'
 
 Hier sieht man sehr schnell, dass das komisch wirkt und man würde am liebsten diese Werte zusammenfassen. Dafür gibt es in javascript objekte:
 
-```
+```js
 const freiwilliger1 = {
     name: 'simon',
     adresse: 'Pfinztal',
@@ -218,20 +218,20 @@ const freiwilliger2 = {
 
 Wenn ich nun die Daten ausgeben oder ändern möchte, kann ich das, wenn ich die attribute anspreche:
 
-```
+```js
 console.log(freiwilliger1.name) --> gibt 'simon' aus
 freiwilliger1.adresse = 'München' --> ändert die Adresse bei freiwilliger1
 ```
 
 was daran cool ist, ist dass man diese objekte nun in ein array packen kann, weil sie beide "gleich" sind:
 
-```
+```js
 const seminarTeilnehmer = [simon, kevin]
 ```
 
 und nun kann ich mit foreach wieder dinge auf einmal bearbeiten und hier zum Beispiel name und adresse pro teilnehmer ausgeben:
 
-```
+```js
 seminarTeilnehmer.forEach(teilnehmer => {
     console.log(teilnehmer.name)
     console.log(teilnehmer.adresse)
@@ -241,7 +241,7 @@ seminarTeilnehmer.forEach(teilnehmer => {
 ## Klassen
 Da man sich bei den Objekten nun merken müsste, wie diese Teilnehmerstruktur aussieht, kann man sich von diesem Objekt eine sogenannte Klasse bauen. Mit der Klasse kann man dann sehr einfach wieder sein Objekt erstellen und muss sich nicht merken, dass jeder Freiwillige einen Namen, eine Adresse und eine Einsatzstelle hat. Das sieht dann so aus:
 
-```
+```js
 class Freiwilliger {
   name: string;
   adresse: string;
@@ -257,7 +257,7 @@ class Freiwilliger {
 
 nun kann ich mir immer neue Freiwillige erstellen, indem ich diese Klasse mit `new` so aufrufe:
 
-```
+```js
 const freiwilliger1 = new Freiwilliger('simon', 'Pfinztal', 'AWO Karlsruhe')
 const freiwilliger2 = new Freiwilliger('kevin', 'Berghausen', 'AWO Durlach')
 
@@ -268,7 +268,7 @@ Das ist noch einmal um einiges kürzer uns damit sehr praktisch.
 
 Aber lass mich noch einmal schnell die Klasse von oben erklären, da gibt es noch ein paar Dinge die man wissen muss:
 
-```
+```js
 name: string;
 adresse: string;
 einsatzort: string;
@@ -276,7 +276,7 @@ einsatzort: string;
 Dieser Teil der Klasse definiert, dass die Klasse diese drei Attribute hat. Der Doppelpunkt danach bedeutet, dass die attribute nur strings sein dürfen. Wenn ich also `name = 1` schreiben würde, würde sich javascript beschweren. Ich kann natürlich auch andere typen wählen, wie `geburtsjahr: number`.
 
 Der nächste Block ist der sogenannte `constructor`:
-```
+```js
 constructor(name, adresse, einsatzort) {
     this.name = name;
     this.adresse = adresse;
@@ -290,7 +290,7 @@ Fehlt nur noch das `this.`, das vor den Attributen im Konstruktor steht. `this.`
 
 Weiterhin kann man Klassen mit Funktionen erweitern, die einem das Leben leichter machen. Zum Beispiel:
 
-```
+```js
 class Freiwilliger {
   name: string;
   adresse: string;
@@ -309,7 +309,7 @@ class Freiwilliger {
 ```
 
 Wie die Funktionen weiter oben kann ich nun an meinen Freiwilligen diese Hilfsfunktion aufrufen und muss mir diese nicht überall neu erstellen:
-```
+```js
 const freiwilliger1 = new Freiwilliger('simon', 'Pfinztal', 'AWO Karlsruhe')
 
 console.log(freiwilliger1.getCompleteInfo()) --> gibt 'simon Pfinztal AWO Karlsruhe' aus
