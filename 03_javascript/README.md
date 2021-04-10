@@ -490,3 +490,86 @@ export default class App extends Vue {
     ]
 }
 ```
+
+## Eigene Komponenten erstellen
+Wenn man nun immer weiter programmiert, wird die App.vue Datei schnell sehr groß und desto mehr man in der Datei hat, desto unübersichtlicher wird es. Deswegen kann man in Vue einzelne Teile auslagern und kann diese dann wieder verwenden. Zum Beispiel könnte ich für den Seminarteilnehmer oben eine eigene Komponente machen, damit die Liste etwas übersichtlicher wird. Dafür legt man folgende `TeilnehmerListEelement.vue` Datei an:
+
+```
+<template>
+  <div class="teilnehmer-border">
+    <div class="name-header">{{ name }}:</div>
+    <div class="teilnehmer-detail">wohnt in {{ adresse }}</div>
+    <div class="teilnehmer-detail">arbeitet in {{ einsatzort }}</div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+@Component({})
+export default class TeilnehmerListElement extends Vue {
+
+  @Prop()
+  name!: string;
+  @Prop()
+  adresse!: string;
+  @Prop()
+  einsatzort!: string;
+}
+
+</script>
+
+<style scoped>
+  .teilnehmer-border {
+    border: 1px solid lightgray;
+  }
+  
+  .name-header {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .teilnehmer-detail {
+    font-size: 14px;
+    padding: 6x;
+  }
+</style>
+```
+
+Die Datei sieht sehr ähnlich zu der `App.vue` Datei, wir haben ein paar Divs, ein paar Attribute in der Klasse und ein paar Styles, die das alles etwas ansehnlicher machen. Neu dazu gekommen ist das `@Prop()` über den Attributen der Klasse. Das ist wieder ein Vue feature, das man verwenden kann um der Komponente von außen Daten zu übergeben, wie in unserem Beispiel die Daten des einzelnen Teilnehmers. Ich zeige, wie wir diese Komponente nun in unserer App verwenden können:
+
+```
+<template>
+  <div>
+    <TeilnehmerListElement 
+      v-for="teilnehmer in seminarTeilnehmer" 
+      :key="teilnehmer.name" 
+      :name="teilnehmer.name"
+      :adresse="teilnehmer.adresse"
+      :einsatzort="teilnehmer.einsatzort" 
+    />
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import TeilnehmerListElement from './TeilnehmerListElement.vue';
+
+@Component({
+  components: {
+    TeilnehmerListElement
+  }
+})
+export default class App extends Vue {
+  seminarTeilnehmer = [
+      new Freiwilliger('simon', 'Pfinztal', 'AWO Karlsruhe'), 
+      new Freiwilliger('kevin', 'Berghausen', 'AWO Durlach')
+    ]
+}
+```
+
+Lasst uns erstmal den oberen Teil im HTML ansehen. Hier habe ich das div mit dem `TeilnehmerListElement` getauscht. Weil wir das `TeilnehmerListElement` als Vue Komponente definiert haben, können wir es nun wie ein normales HTML Element verwenden. Auch die Styles von der Komponente sind nun verfügbar. So können wir sehr einfach kleinere Teile unserer Webseite in einzelne Komponenten unterteilen und überall wieder verwenden. Wir könnten auch Buttons oder Menüelemente so in einzelne Elemente aufteilen, damit wir möglichst wenig Arbeit doppelt machen müssen. Die `@Prop()` Anweisung in der Teilnehmer komponente ermöglicht es uns auserdem, dass wir über `:name`, `:adresse` und `:einsatzort` die Daten an die Teilnehmerkomponente weitergeben können. Bei einem Button könnte man sich vorstellen, dass man ein Attribut `buttonText` hat, das dann den text des Buttons bekommen kann.
+
+Nun shauen wir uns den rest der Klasse im Javascript teil an. Hier ist die Zeile `import TeilnehmerListElement from './TeilnehmerListElement.vue';` dazugekommen. Das sagt Vue, dass wir hier in unserer App die Komponente `TeilnehmerListElement` verwenden wollen. Also importieren wir sie. Nun kommt auch die `@Component` Anweisung ins Spiel, bei der wir der App Komponente das `TeilnehmerListElement` aktiv übergeben. Dieser Schritt macht es uns möglich im HTML einen `<TeilnehmerListElement>` tag zu verwenden, der ja eigentlich kein richtiges HTML ist. Am besten merkt ihr euch einfach, dass ihr diese beiden Zeilen so braucht, wenn ihr eine neue Komponente in eurer App verwenden wollt. 
+
+Man kann das alles natürlich auch weitertreiben und in dem `TeilnehmerListElement` andere Komponenten importieren und verwenden, wenn diese wieder zu groß werden sollte. 
