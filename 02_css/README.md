@@ -18,7 +18,7 @@ CSS wird im `<head>` der html Datei definiert. Man kann es auch in einer separat
 </head>
 ```
 
-Hier zwischen den `<style>` tags schreiben wir nun unser CSS
+Hier zwischen den `<style>` tag schreiben wir nun unser CSS
 
 ## Syntax
 Eine CSS Anweisung ist sehr simpel und besteht im Grunde nur aus zwei teilen:
