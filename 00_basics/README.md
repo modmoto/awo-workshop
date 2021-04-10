@@ -17,9 +17,48 @@ Weiterhin gibt es ein cooles Element, mit dem ihr Elemente auf der Seite auswäh
 
 ## Git in VS
 
+### Versionskontrolle
+Um unsere Dateien Online zu speichern, verwenden wir GIT. Der Vorteil von GIT gegenüber zu anderen Cloud Lösugnen ist, dass ich immer alle Stände wieder abrufen kann. Weiterhin brauchen wir es später um unsere Webseite auf Heroku zu laden und dort bereitzustellen.
 
+Öffne den GIT Bereich und lade dein Project auf Github hoch. Du musst dich dann bei Github einloggen, damit alles mit deinem Accound verknüpft ist:
+
+![](pictures/newrepo.JPG)
+
+Nun haben wir den ersten Stand hochgeladen. Wenn wir nun Dateien ändern, sehen wir in GIT, was wir geändert haben. Sobald wir damit zufrieden sind, können wir die Änderungen "comitten". Das heißt so etwas wie speichern. Du musst imemr eine speichernachricht eingeben und dann mit dem Haken bestätigen:
+
+![](pictures/commit.JPG)
+
+Und nun als letzter Schritt können wir die Dateien zu Github hochladen. Hochladen heißt in Github "Push" und geht über das Menü und diesen Button:
+
+![](pictures/push.png)
+
+Wenn ihr nun auf githugb eure Accounr öffnet, könnt ihr dort euren Code sehen.
 
 ## Heroku
+
+Jetzt wollen wir die Webseite online verfügbar machen.
+
+Logge dich bei www.heroku.com ein und klicke oben rechts auf "Create New App".
+
+![](pictures/heroku_new_app.png)
+
+ Vergib im folgenden Menü einen Namen (das wird später die URL unter der ihr eure Website finden könnt) und klicke auf "Create app".
+
+![](pictures/in_create_menu.JPG)
+
+Nun bist du im Übersichtsmenü deiner App. Wir richten jetzt die Verbindung zwischen Github und deiner App ein. Klicke zuerst auf "Connect to github", und logge dich daraufhin bei Github ein. Bestätige alles was du gefragt wirst mit OK. Suche dann in der Suchleiste nach deinem Projekt (Search) und klicke beim richtigen Projekt auf "Connect"
+
+![](pictures/heroku_add_ci.png)
+
+Nun klicken wir nur noch auf "Enable Automatic Deploys" und einmal auf "Deploy", damit die webseite erstellt wird. Sobald ihr nun mit Git wieder pusht, wir wegen "Enable Automatic Deploy" eure Webseite automatisch bei Heroku aktualisiert. Das kann ein paar Sekunden dauern
+
+![](pictures/heroku_add_pipeline.png)
+
+Öffne nun deine Webseite mit "Open App" oben rechts. 
+
+![](pictures/heroku_open.png)
+
+Herzlichen Glückwunsch, wir sind nun live im Internet =) :clap::clap::clap:
 
 
 
