@@ -32,7 +32,11 @@ Und nun als letzter Schritt können wir die Dateien zu Github hochladen. Hochlad
 
 ![](pictures/push.png)
 
-Wenn ihr nun auf githugb eure Accounr öffnet, könnt ihr dort euren Code sehen.
+Wenn ihr nun auf githugb eure Account öffnet, könnt ihr dort euren Code sehen.
+
+Ein sehr cooles Feature von Git ist, dass ich äderungen nachverfolgen und wieder rückgängig machen kann. Falls ihr mal wieder zum letzten Commit zurück wollt, könnt ihr im Github Fenster per "Discard Changes" eure Änderungen verwerden. Hier im Beispiel habe ich etwas gelöscht (rot), das ich nicht wollte. Mit Discard, kommen wir wieder zum alten Stand zurück.
+
+![](pictures/git_discard.png)
 
 ## Heroku
 
