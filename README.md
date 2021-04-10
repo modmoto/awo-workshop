@@ -9,7 +9,7 @@ Mittag 12:00 - 13:00
 
 Ende: 15:00
 
-Am Montag würde ich um 15:00 Uhr noch anbieten, dass wir zusammen eure erstellten Webseiten online stellen, damit ihr die Seiten liven im Internet habt. Das geht Maxinmal 30 Minuten extra und ist kein Pfichtteil.
+Am Montag würde ich um 15:00 Uhr noch anbieten, dass wir zusammen eure erstellten Webseiten online stellen, damit ihr die Seiten live im Internet habt. Das geht Maxinmal 30 Minuten extra und ist kein Pfichtteil.
 
 Themen:
 - Montag: HTML
