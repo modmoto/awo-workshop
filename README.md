@@ -88,6 +88,10 @@ Diese Projekte sind hier verlinkt, damit ihr sie später leichter findet. Bis zu
 
 https://github.com/modmoto/workshop-html-and-css-examples
 
+https://github.com/modmoto/workshop-aufgaben
+
+https://github.com/modmoto/workshop-website-basic
+
 https://github.com/modmoto/workshop-website-vue
 
 https://github.com/modmoto/workshop-backend-express
