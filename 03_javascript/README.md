@@ -129,6 +129,16 @@ console.log(seminarTeilnehmer[1]) --> gibt 'ramona' aus
 ```
 Hier ist wichtig zu wissen, dass der erste Eintrag immer mit 0 beginnt und nicht mit eins. Das hat einige Vorteile für Operationen, die wir nicht brauchen werden. Merkt es euch einfach, weil ihr euch sonst wundert, warum euch Elemente fehlen ;)
 
+Man kann arrays auch erweitern oder kleiner machen. Das geht mit der function `push` bzw `pop`:
+
+```
+const seminarTeilnehmer = ['mark', 'ramona', 'kevin']
+seminarTeilnehmer.push('neuling') --> jetzt sieht das array so aus: ['mark', 'ramona', 'kevin', 'neuling']
+
+const letztesElement = seminarTeilnehmer.pop() --> jetzt sieht das array so aus: ['mark', 'ramona', 'kevin']
+console.log(letztesElement) --> gibt 'neuling' aus
+```
+
 ## For
 Ein for kann man verwenden, wenn man für alle Elemente eines Arrays etwas tun möchte. Zum Beispiel kann man so alle Teilnehmer ausgeben:
 ```
