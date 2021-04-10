@@ -2,6 +2,21 @@ Hallo liebe Freiwillige,
 
 hier trage ich alle nötigen Informationen für unser Seminar ein, damit ihr diese später immer nachlesen könnt. 
 
+# Wochenplan
+Start: 9:30 (Mit einer Pause zwischendrin)
+
+Mittag 12:00 - 13:00
+
+Ende: 15:00
+
+Themen:
+- Montag: HTML 
+- Dienstag: CSS
+- Mittwoch: Javascript
+- Donnerstag: Vue
+- Freitag: Vue 
+
+
 # Todos vor dem Kurs
 Um in der Seminarwoche direkt loslegen zu können, brauchen wir noch ein bisschen Software und ein Nutzerkonto bei zwei Webseiten. Ich erkläre hier, wie ihr das installieren könnt. Keine Angst, es ist einfacher, als es zuerst aussieht ;)
 
