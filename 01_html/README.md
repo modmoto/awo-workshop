@@ -105,13 +105,7 @@ Mit dem Button tag kann man Buttons darstellen. Wie auch span werden buttons in 
 
 ergibt:
 
-<button>
-    click me
-</button>
-
-<button>
-    click me also
-</button>
+![](pictures/buttons.JPG)
 
 ## Links `<link>`
 Um klickbare Links darzustellen, kann man den a tag verwenden. Weiterhin muss man das Ziel mit dem Attribut `href` angeben.
