@@ -1,6 +1,11 @@
 # Vue
 Jetzt kennen wir einige Dinge aus Javascript und sind gewappnet für die Details aus Vue, also beginnen wir mit ein paar Erklärungen:
 
+## Erstes Setup
+Lade dir zuerst dieses Projekt herunter und befolge die Installationsanleitungen dort
+
+https://github.com/modmoto/workshop-website-vue
+
 ## .vue Dateien
 In Vue erstellt man keine .html Dateien, sondern .vue Dateien. Eine .vue Datei vereint HTML, CSS und Javascript in einem und sieht so aus:
 
