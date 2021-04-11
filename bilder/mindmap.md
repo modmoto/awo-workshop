@@ -1,0 +1,25 @@
+zeitplan
+
+## Mo
+- Links Rechts spiel
+	- Ich habe schon mal HTML verwendet
+	- Ich habe schon mal CSS verwendet
+	- Ich habe schon mal in irgend einer programmiersprache programmiert
+	- Ich habe mal ein privates IT Projekt gemacht (Schulwebseite, Vereinswebseite, Mod in PC Spiel)
+	- Ich weiß was typescript ist
+	- ich habe mal an einer node anwendung programmiert
+
+- Zeitplan klären
+- vorschaue geben
+- projekt vorstellen
+- fragen wer alles installiert/angemeldet hat
+- html gogo? 
+
+## HTML:
+- vs aufmachen
+- html file erstellen
+- chrome dev tools von mini seite
+	
+## CSS:
+	- wiederholen
+
