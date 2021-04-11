@@ -1,5 +1,3 @@
-zeitplan
-
 ## Mo
 - Links Rechts spiel
 	- Ich habe schon mal HTML verwendet
@@ -21,5 +19,6 @@ zeitplan
 - chrome dev tools von mini seite
 	
 ## CSS:
-	- wiederholen
+- wiederholen
+- webseiten online anschauen 
 
