@@ -293,7 +293,7 @@ tbd
 tbd
 https://www.fontspace.com/category/opentype
 tbd: tye erklären
-```
+```css
 @font-face {
     font-family: "Hussar";
     src:url(./HussarBoldWebEdition-xq5O.otf) format("opentype");
