@@ -2,6 +2,20 @@ Hallo liebe Freiwillige,
 
 hier trage ich alle nötigen Informationen für unser Seminar ein, damit ihr diese später immer nachlesen könnt. 
 
+## Projekte für das Seminar:
+Diese Projekte sind hier verlinkt, damit ihr sie später leichter findet. Bis zum Seminar braucht ihr die noch nicht.
+
+https://github.com/modmoto/workshop-html-and-css-examples
+
+https://github.com/modmoto/workshop-aufgaben
+
+https://github.com/modmoto/workshop-website-basic
+
+https://github.com/modmoto/workshop-website-vue
+
+https://github.com/modmoto/workshop-backend-express
+
+
 # Wochenplan
 Start: 9:30 (Mit einer Pause zwischendrin)
 
@@ -86,16 +100,3 @@ Falls folgende Ausgabe kommt:
 Ist etwas bei der Installation schief gegangen. Melde dich am besten bei mir, damit wir das Problem vor dem Seminar lösen können.
 
 Sonst klappt nun alles, Glückwunsch! :clap::clap::clap:
-
-## Projekte für das Seminar:
-Diese Projekte sind hier verlinkt, damit ihr sie später leichter findet. Bis zum Seminar braucht ihr die noch nicht.
-
-https://github.com/modmoto/workshop-html-and-css-examples
-
-https://github.com/modmoto/workshop-aufgaben
-
-https://github.com/modmoto/workshop-website-basic
-
-https://github.com/modmoto/workshop-website-vue
-
-https://github.com/modmoto/workshop-backend-express
