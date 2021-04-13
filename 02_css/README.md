@@ -282,7 +282,25 @@ Man kann `padding` und `margin` auch mit einem suffix von `-top`, `-bottom`, `-l
 ```
 
 ## Bilder in CSS
-tbd
+Bilder kann man auch als Hintergrund eines divs (oder alle anderen HTML elemente, wie td oder button) darstellen.
+```css
+.katzen-bild {
+    width: 200px;
+    height: 300px;
+    
+    background-image: url("katze.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+```
+
+Hier gibt es nun ein paar Befehle, die interessant sind. `background-image` definiert mit dem `url()` wie bei der `src` von `img` tags das bild. Der url begriff ist hier wichtig, nur der text reicht leider nicht.
+
+Weiter kann man mit `background-size` die Größe einstellen. Hier mann man das Bild auch stretchen beispielsweise. Am meisten wird cover verwendet, da man so das Bild voll anzeigt und es je nach Größe auch anständig skaliert wird, nicht wie bei img gestretcht.
+
+Als letzten parameter gibt es `background-repeat`, den man meistens auf `no-reeat` stellt. Wenn der Container in dem das Bild verwendet wird größer als das Bild ist, wird das Bild nämlich wieder und wieder dargestellt. Mit `no-repeat` kann man das abstellen.
+
+
 
 ## Farbverlauf
 
