@@ -288,7 +288,7 @@ tbd
 
 ```css
 body {
-    linear-gradient( to left top, blue, red);   
+    background-image: linear-gradient( to left top, blue, red);   
 }
 ```
 
