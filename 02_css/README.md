@@ -284,6 +284,14 @@ Man kann `padding` und `margin` auch mit einem suffix von `-top`, `-bottom`, `-l
 ## Bilder in CSS
 tbd
 
+## Farbverlauf
+
+```css
+body {
+    linear-gradient( to left top, blue, red);   
+}
+```
+
 ## Element Alignment
 - tbd flex box
 - tbd float
