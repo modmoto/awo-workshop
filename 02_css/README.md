@@ -304,11 +304,14 @@ tbd: tye erklären
 ```css
 @font-face {
     font-family: "Hussar";
-    src:url(./HussarBoldWebEdition-xq5O.otf) format("opentype");
+    src:url(./HussarBoldWebEdition-xq5O.otf);
 }
 
 body {
     font-family: 'Hussar';
+    letter-spacing: 35x;
+    font-weight: 100;
+    font-style: italic;
 }
 
 ```
