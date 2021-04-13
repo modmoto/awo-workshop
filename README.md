@@ -20,7 +20,7 @@ Themen:
 
 
 # Todos vor dem Kurs
-Um in der Seminarwoche direkt loslegen zu können, brauchen wir noch ein bisschen Software und ein Nutzerkonto bei zwei Webseiten. Ich erkläre hier, wie ihr das installieren könnt. Keine Angst, es ist einfacher, als es zuerst aussieht ;)
+Um in der Seminarwoche direkt loslegen zu können, brauchen wir noch ein zwei Installationen, damit wir arbeiten können. Ich erkläre hier, wie ihr das installieren könnt. Keine Angst, es ist einfacher, als es zuerst aussieht ;)
 
 ## Visual Studio Code
 Download: https://code.visualstudio.com/
@@ -35,6 +35,10 @@ Download: https://nodejs.org/en/
 Node ist ein Programm, das einige Sachen beim Programmieren vereinfacht. Was genau ist schwer zu erklären, wenn du noch keine Erfahrung mit programmieren hast. Vertrau mir einfach, dass wir es brauchen und es nützlich ist ;) Lass auch hier bei der Installation einfach alles auf den Standardeinstellungen und klicke dich durch.
 
 ![](bilder/node.JPG)
+
+
+# Optionale Software
+Wenn ihr später die Webseite noch wirklich ins Internet bringen wollt, braucht ihr noch GIT und die Logins zu GIthub und Heroku. Hier erkläre ich, wie das geht.
 
 ## GIT 
 Download: https://git-scm.com/download/win

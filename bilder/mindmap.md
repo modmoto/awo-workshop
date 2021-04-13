@@ -17,9 +17,21 @@
 ## HTML:
 - vs aufmachen
 - html file erstellen
+
 - chrome dev tools von mini seite
+- weiter posts in example seite
 	
 ## CSS:
+- ansprechen
+- rundherum feedback
+
 - wiederholen
-- webseiten online anschauen 
+	- wie startet eine webseite
+	- div span unterschied
+	- wie heißen die elemente bei table
+	- link
+	- input
+
+- html beispiele verteilen
+- gogo css
 
