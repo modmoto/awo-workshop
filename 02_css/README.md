@@ -318,7 +318,7 @@ body {
 ## Schriftarten
 tbd
 https://www.fontspace.com/category/opentype
-tbd: tye erklären
+tbd: type erklären
 ```css
 @font-face {
     font-family: "Hussar";
