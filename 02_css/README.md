@@ -331,7 +331,6 @@ body {
     font-weight: 100;
     font-style: italic;
 }
-
 ```
 
 ## CSS direkt in HTML
