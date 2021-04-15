@@ -10,7 +10,7 @@ https://www.w3schools.com/jquery/jquery_dom_get.asp
 ```
 
 ```js
-$('document').load(() => {
+$('document').ready(() => {
     $('#mein-button').click(async () => {
         const response = await axios.get('https://simon-guesbook-backend.herokuapp.com/greetings');
 
