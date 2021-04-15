@@ -11,7 +11,19 @@ https://www.w3schools.com/jquery/jquery_dom_get.asp
 
 ```js
 $('document').ready(() => {
+    let audio = new Audio('cena.mp3')
+    let audioIsPlaying = false
+
     $('#mein-button').click(async () => {
+        if (audioIsPlaying) {
+            audio.pause();
+            audio.currentTime = 0;
+            audioIsPlaying = false
+        } else {
+            audio.play()
+            audioIsPlaying = true
+        }
+        
         const response = await axios.get('https://simon-guesbook-backend.herokuapp.com/greetings');
 
         if (response.data) {
