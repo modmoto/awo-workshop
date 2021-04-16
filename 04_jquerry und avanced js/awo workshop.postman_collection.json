@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "8cc8bdce-104a-4bb9-87b6-3f5f5ab011d2",
+		"name": "awo workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post greeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"greeting\": \"hello everyone\",\r\n    \"user\": \"simon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://simon-guesbook-backend.herokuapp.com/greetings/simon",
+					"protocol": "https",
+					"host": [
+						"simon-guesbook-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"greetings",
+						"simon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get greetings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simon-guesbook-backend.herokuapp.com/greetings/simon",
+					"protocol": "https",
+					"host": [
+						"simon-guesbook-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"greetings",
+						"simon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "like greeting",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://simon-guesbook-backend.herokuapp.com/greetings/simon/60787be3e5f8c800154096d3",
+					"protocol": "https",
+					"host": [
+						"simon-guesbook-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"greetings",
+						"simon",
+						"60787be3e5f8c800154096d3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete greetings",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://simon-guesbook-backend.herokuapp.com/greetings/simon/60784ba938b10f3f08c77ec6",
+					"protocol": "https",
+					"host": [
+						"simon-guesbook-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"greetings",
+						"simon",
+						"60784ba938b10f3f08c77ec6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
