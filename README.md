@@ -51,12 +51,13 @@ Nun musst du git noch einrichten, drücke dazu die Windows Taste und tippt einfa
 
 ![](bilder/cmd.JPG)
 
-Tippt nun folgende Befehle und drückt `enter`. Damit sagt ihr git, wer ihr seid, ändert also den text "awo" und "awo@test.de" entsprechend ab. Falls ihr das überlesen habt, auch nicht schlimm, es muss nur gemacht werden, damit git funktioniert.
+Tippt nun folgende Befehle und drückt `enter`.
 
 ```
 git config --global user.name "awo"
 git config --global user.email "awo@test.de"
 ```
+Damit sagt ihr git, wer ihr seid, ändert also den text "awo" und "awo@test.de" entsprechend ab. Falls ihr das überlesen habt, auch nicht schlimm, es muss nur gemacht werden, damit git funktioniert.
 
 Die `Eingabeaufforderung` sollte keinen Fehler ausgeben und einfach so aussehen:
 
