@@ -72,7 +72,7 @@ Ist etwas bei der Installation schief gegangen. Melde dich am besten bei mir, da
 Sonst klappt nun alles, Glückwunsch! :clap::clap::clap:
 
 ## Logins (optional):
-Wir brauchen auch noch ein Nutzerkonto für folgende Webseiten, wenn wir später die Webseite live ins Internet stellen wollen. Das ist optional, aber . Merkt euch das passwort am besten ;). Es reicht wenn ihr euch testweise einmal einloggt, was genau die Webseiten machen erkläre ich dann im Seminar.
+Wir brauchen auch noch ein Nutzerkonto für folgende Webseiten, wenn wir später die Webseite live ins Internet stellen wollen. Das ist optional, aber es macht natürlich sehr viel mehr Spaß, wenn man die Webseite später anderen Leuten zeigen kann. Merkt euch das passwort am besten ;). Es reicht wenn ihr euch testweise einmal einloggt, was genau die Webseiten machen erkläre ich dann im Seminar.
 
 ### Github
 http://github.com/
