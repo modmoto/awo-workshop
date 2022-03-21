@@ -64,6 +64,16 @@ Nun klicken wir nur noch auf "Enable Automatic Deploys" und einmal auf "Deploy",
 
 Herzlichen Glückwunsch, wir sind nun live im Internet =) :clap::clap::clap:
 
+## Übungen GIT
+- committe 3 mal eine Änderung
+- Ändere etwas und drehe die Änderung zurück (ohne vorher zu committen)
+- Checke eine ältere version wieder aus
+- Checke wieder den master aus
+
+## Übungen Chrome Devtools
+- Mach eine von dir oft besuchte webseite auf und inspecte ein paar Elemente
+- Finde ein bestimmtes Bild im Network tab wieder
+
 
 
 
