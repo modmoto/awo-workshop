@@ -316,3 +316,20 @@ console.log(freiwilliger1.getCompleteInfo()) --> gibt 'simon Pfinztal AWO Karlsr
 ```
 
 Auch das erspart einem auf Dauer extrem viel Code und deswegen werden Klassen zusammen mit Funktionen sehr häufig verwendet.
+
+## Übungen
+Alle ausgaben kannst du entweder über `alert()` oder `console.log()` machen, was dir lieber ist.
+- gib irgend einen Wert über die `alert()` funktion des browsers aus
+- beschreibe eine Variable und gib den Wert der Variable aus
+- rechne zwei zahlen zusammen und gib das Ergbniss aus
+- nimm zwei variablen und packe den Wert in einem einzigen langen text zusammen. Gib dann diesen Text aus.
+- erstelle eine variable mit einer zahl
+- verwende diese zahl in einem `if`. Gib irgend einen text aus, wenn die Zahl größer als 15 ist und einen anderen Text, wenn die Zahl kleiner ist
+- erstelle ein array mit ein paar namen
+- gib bei diesem array den ersten und letzten namen aus
+- ändere den ersten und letzten wert in diesem array und gib die werte noch einmal aus
+- gib mit einem foreach alle namen nacheinander aus
+- erstelle ein object mit ein paar properties die dir einfallen.
+- gib den wert dieser properties aus
+- verändere den wert von einer der properties und gib diesen neuen wert aus
+
