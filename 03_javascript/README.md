@@ -127,7 +127,7 @@ Nun kann man auf arrays einzelne Elemente beschreiben oder auslesen, wenn man da
 seminarTeilnehmer[2] = 'simon'
 console.log(seminarTeilnehmer[1]) --> gibt 'ramona' aus
 ```
-Hier ist wichtig zu wissen, dass der erste Eintrag immer mit 0 beginnt und nicht mit eins. Das hat einige Vorteile für Operationen, die wir nicht brauchen werden. Merkt es euch einfach, weil ihr euch sonst wundert, warum euch Elemente fehlen ;)
+Hier ist wichtig zu wissen, dass der erste Eintrag immer mit null beginnt und nicht mit eins. Das hat einige Vorteile für Operationen, die wir nicht brauchen werden. Merkt es euch einfach, weil ihr euch sonst wundert, warum euch Elemente fehlen ;)
 
 Man kann arrays auch erweitern oder kleiner machen. Das geht mit der function `push` bzw `pop`:
 

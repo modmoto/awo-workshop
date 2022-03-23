@@ -298,9 +298,7 @@ Hier gibt es nun ein paar Befehle, die interessant sind. `background-image` defi
 
 Weiter kann man mit `background-size` die Größe einstellen. Hier mann man das Bild auch stretchen beispielsweise. Am meisten wird cover verwendet, da man so das Bild voll anzeigt und es je nach Größe auch anständig skaliert wird, nicht wie bei img gestretcht.
 
-Als letzten parameter gibt es `background-repeat`, den man meistens auf `no-reeat` stellt. Wenn der Container in dem das Bild verwendet wird größer als das Bild ist, wird das Bild nämlich wieder und wieder dargestellt. Mit `no-repeat` kann man das abstellen.
-
-
+Als letzten parameter gibt es `background-repeat`, den man meistens auf `no-repeat` stellt. Wenn der Container in dem das Bild verwendet wird größer als das Bild ist, wird das Bild nämlich wieder und wieder dargestellt. Mit `no-repeat` kann man das abstellen.
 
 ## Farbverlauf
 
