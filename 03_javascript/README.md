@@ -328,8 +328,15 @@ Alle ausgaben kannst du entweder über `alert()` oder `console.log()` machen, wa
 - erstelle ein array mit ein paar namen
 - gib bei diesem array den ersten und letzten namen aus
 - ändere den ersten und letzten wert in diesem array und gib die werte noch einmal aus
-- gib mit einem foreach alle namen nacheinander aus
+- gib mit einem `foreach` alle namen nacheinander aus
 - erstelle ein object mit ein paar properties die dir einfallen.
 - gib den wert dieser properties aus
 - verändere den wert von einer der properties und gib diesen neuen wert aus
+
+### Bonusaufgaben
+- verwende eine Stringconcatenation, wie weiter oben im text beschrieben um zwei variablen zusammen auszugeben
+- rechne in einer foreach die summe eines arrays mit zahlen zusammen
+- erstelle ein array aus objekten (hierzu musst du googlen ;) ). Dieses objekte für das array sollten mindestens eine property mit dem alter haben. Also mindestens so etwas: `{ age: 15} `
+- rechne über dieses array aus objekten das durchschnittliche alter der fsjler aus
+
 
