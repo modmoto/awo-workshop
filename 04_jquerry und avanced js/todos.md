@@ -11,7 +11,9 @@
 - on click on minus
 - on click when over 5 make bg red
 - on click add class when over 5
+    document.getElementById('plus').classList.add('green')
 - on click remove class when below 5 again
+    document.getElementById('plus').classList.remove('round')
 - add comment - get text
 
 document.getElementById('add-comment').onclick = () => {
