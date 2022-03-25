@@ -19,6 +19,9 @@
     jahre alt
 
 - if (ist eingeloggt)
+- else
+- else if
+
 - array
     - const ar = ['123']
     - ar[1] = '456'

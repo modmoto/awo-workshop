@@ -21,6 +21,21 @@ document.getElementById('add-comment').onclick = () => {
     alert(name.value)
 }
 
+- else if
+- style prop with visible oder background
+    - textAusgabe.style.backgroundColor = 'red'
+
+- oninput 
+textField.oninput = () => {
+        textAusgabe.textContent = textField.value
+    }
+
+- range onchange 
+let slider = document.getElementById('range-slider');
+slider.oninput = () => {
+    textAusgabe.textContent = slider.value
+}
+
 - create crazy html for comment
 
 const roll = 12
@@ -29,3 +44,8 @@ document.body.insertAdjacentHTML('beforeend',
 `<div id="newChild">
     <h1>${roll}</h1>
 </div>`);
+
+
+- https://developer.mozilla.org/de/docs/Web/API/Element/insertAdjacentHTML
+
+` => geht mit shift neben backspace und dann tippen auf deutscher tastatur
