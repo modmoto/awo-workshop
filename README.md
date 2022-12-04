@@ -12,18 +12,6 @@ Visual Studio Code (auch VS genannt) ist ein Texteditor, mit dem wir unsere Webs
 
 ![](bilder/vscode.JPG)
 
-## Herunterladen des Starterprojekts
-Download: https://github.com/modmoto/workshop-website-basic
-
-Ladet euch hier das Starterprojekt herunter
-![](bilder/download-repo.png)
-
-und entzippt es mit rechtsklick
-
-![](bilder/unzip.png)
-
-Legt euch die Dateien irgendwo ab, wo ihr sie zum Seminar wieder findet. Das Projekt ist sehr klein und wir könnten es auch im Seminar selber erstellen, aber so sparen wir uns etwas setup Zeit. Was genau die einzelnen Dateien tun werde ich später noch im Seminar erklären.
-
 ## Projekte für das Seminar:
 Diese Projekte sind hier verlinkt, damit ihr sie später leichter findet. Bis zum Seminar braucht ihr die noch nicht.
 
