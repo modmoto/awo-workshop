@@ -24,51 +24,6 @@ und entzippt es mit rechtsklick
 
 Legt euch die Dateien irgendwo ab, wo ihr sie zum Seminar wieder findet. Das Projekt ist sehr klein und wir könnten es auch im Seminar selber erstellen, aber so sparen wir uns etwas setup Zeit. Was genau die einzelnen Dateien tun werde ich später noch im Seminar erklären.
 
-## GIT 
-Download: https://git-scm.com/download/win
-
-GIT ist ein sogenanntes Versionskontrollsystem. Was das genau ist, erkläre ich später im Seminar. Um es kurz zu machen: Mit GIT ladet ihr eure gebastelte Webseite in die Cloud, wo wir sie dann später über einen Browser ansehen können. Lass bei der Installation einfach alles auf den Standardeinstellungen und klicke dich durch. Es sind relativ viele Screens, bis man fertig ist, nur damit du nicht denkst, du bist irgendwo falsch abgebogen. 
-
-![](bilder/git.JPG)
-
-Nun musst du git noch einrichten, drücke dazu die Windows Taste und tippt einfach `cmd` auf der Tastatur. Ihr könnt auch die Suche Funktion klicken und dort `cmd` eingeben. Klickt dann auf das Programm `Eingabeaufforderung`. 
-
-![](bilder/cmd.JPG)
-
-Tippt nun folgende Befehle und drückt `enter`.
-
-```
-git config --global user.name "awo"
-git config --global user.email "awo@test.de"
-```
-Damit sagt ihr git, wer ihr seid, ändert also den text "awo" und "awo@test.de" entsprechend ab. Falls ihr das überlesen habt, auch nicht schlimm, es muss nur gemacht werden, damit git funktioniert.
-
-Die `Eingabeaufforderung` sollte keinen Fehler ausgeben und einfach so aussehen:
-
-![](bilder/check-version.JPG)
-
-Falls folgende Ausgabe kommt:
-```
-git is not recognized as an internal or external command, operable program or batch file.
-```
-
-Ist etwas bei der Installation schief gegangen. Melde dich am besten bei mir, damit wir das Problem vor dem Seminar lösen können.
-
-Sonst klappt nun alles, Glückwunsch! :clap::clap::clap:
-
-## Logins (optional):
-Wir brauchen auch noch ein Nutzerkonto für folgende Webseiten, wenn wir später die Webseite live ins Internet stellen wollen. Das ist optional, aber es macht natürlich sehr viel mehr Spaß, wenn man die Webseite später anderen Leuten zeigen kann. Merkt euch das passwort am besten ;). Es reicht wenn ihr euch testweise einmal einloggt, was genau die Webseiten machen erkläre ich dann im Seminar.
-
-### Github
-http://github.com/
-
-Github ist eine Webseite für GIT (siehe oben). Das ist dann die Cloud, in der wir unsere Webseite mit GIT hochladen.
-
-### Heroku
-https://www.heroku.com/
-
-Heroku ist der Ort, wo wir unsere Webseite erreichen können. Ihr bekommt hier eine URL, wie zum Beispiel https://simon-guestbook-vue.herokuapp.com/ (das erste aufrufen dauert immer ein bisschen) auf der ihr dann eure Webseite aufrufen könnt.
-
 ## Projekte für das Seminar:
 Diese Projekte sind hier verlinkt, damit ihr sie später leichter findet. Bis zum Seminar braucht ihr die noch nicht.
 
