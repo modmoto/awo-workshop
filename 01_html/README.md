@@ -276,5 +276,3 @@ ergibt:
 
 ## invalides HTML
 HTML ist sehr "robust" was Fehler angeht. Wenn man mal vergisst einen tag zu schließen, sieht die Seite oft noch so aus wie vorher. Allerdings liegt das nicht an HTML sondern an den Browsern, die diese Fehler korrigieren und mit der Zeit immer besser geworden sind. Ältere Browser machen gerne mal aus kaputtem HTML auch eine kaputte Webseite. Deswegen rentiert es sich, hier trotzdem sorgfältig zu arbeiten. Probiert gerne mal rum, was euer Browser so aushält.
-
-Ü
