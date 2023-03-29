@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Meine Webseite
+        </title>
+        <style>
+            table, th, td {
+                border: 2px solid blue;
+            }
+
+            h3 {
+                color: darkolivegreen;
+            }
+
+            #headline {
+                background-color: aqua;
+                text-align: center;
+                font-size: large;
+                padding: 30px;
+            }
+
+            #main-menu div:nth-child(odd) {
+                background-color: blue;
+            }
+
+            #main-menu div:nth-child(2) {
+                background-color: red;
+            }
+
+            .button {
+                padding: 15px 32px;
+                font-size: 16px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 2px;
+            }
+
+            .primary-button {
+                background-color: blueviolet;
+                color: floralwhite;
+                border-color: black;
+            }
+
+            .primary-button:hover {
+                background-color: deeppink;
+            }
+
+            .secondary-button {
+                background-color: floralwhite;
+                color: blueviolet;
+                border-color: blueviolet;
+            }
+
+            .secondary-button:hover {
+                color: deeppink;
+            }
+
+            .color-example {
+                color: red;
+            }
+
+            .border-color-example {
+                border-color: red;
+                border-width: 2px;
+                border-style: solid;
+            }
+
+            .background-color-example {
+                background-color: red
+            }
+
+            .menu-wrapper {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .menu-item {
+                background-color: brown;
+                color: burlywood;
+                padding: 20px;
+            }
+
+            .padding-example {
+                display:inline-block;
+                padding: 30px;
+                border: 2px solid coral;
+            }
+
+            .margin-example {
+                display:inline-block;
+                margin: 30px;
+                border: 2px solid coral;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>mit ID gestyled</h3>
+
+        <div id="headline">
+            Wilkommen auf meiner Seite
+        </div>
+        
+        <h3>mit class gestyled</h3>
+        <button class="button">
+            Just a basic button
+        </button>
+        <button class="button primary-button">
+            Primary Button
+        </button>
+        <button class="button secondary-button">
+            Secondary Button
+        </button>
+        <button class="button secondary-button">
+            Another Secondary Button
+        </button>
+
+        <h3>Pseudo Selektoren</h3>
+        <div id="main-menu">
+            <div>blau</div>
+            <div>rot</div>
+            <div>blau</div>
+            <div>keine Farbe</div>
+            <div>blau</div>
+        </div>
+
+        <h3>Gestyled ohne klassen</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>a</th>
+                    <td>b</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>d</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Farben</h3>
+        <div class="color-example">color</div>
+        <div class="border-color-example">border-color</div>
+        <div class="background-color-example">background-color</div>
+
+        <h3>Padding (Abstand nach innen)</h3>
+        <div class="padding-example">
+            Das ist Padding
+        </div>
+        <div class="padding-example">
+            Das ist Padding daneben
+        </div>
+        <h3>Margin (Abstand nach außen)</h3>
+        <div style="border: solid 1px black;">
+            <div class="margin-example">
+                Das ist Margin
+            </div>
+
+            <div class="margin-example">
+                Das ist Margin daneben
+            </div>
+        </div>
+        <h3>Ausrichtung für Menüs</h3>
+        <div class="menu-wrapper">
+            <div class="menu-item">erster Block</div>
+            <div class="menu-item">zweiter Block</div>
+            <div class="menu-item">dritter Block</div>
+        </div>
+        
+
+    </body>
+</html>
