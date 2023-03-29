@@ -339,3 +339,16 @@ Man kann auch einen style direkt an einem html element definieren. Man tut das a
     gestyled
 </div>
 ```
+
+# CSS Aufagben
+
+Versucht nun mit den kennen gelernten CSS Eigenschaften euer Gästebuch etwas aufzuhübschen. Ihr dürft auch gerne noch Dinge im HTML ändern, wenn euch das Layout nicht gefällt. Unten mal ein Beispiel wie das aussehen könnte.
+
+Bonusaufgaben:
+- Bindet eine Schrift ein, die ihr aus dem Internet habt (tipp, woff oder otf Schriften bieten sich an)
+- Sucht euch ein paar Icons für Buttons oder ähnliches
+- Findet heraus wie das Animieren eines Buttons funktioniert, wenn man seinen Cursor darüber bewegt (siehe Gif weiter unten)
+
+![](pictures/example-styled.JPG)
+
+![](pictures/button-fade.gif)

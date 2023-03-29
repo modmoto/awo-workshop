@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Wilkommen</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./smile.ico">
+        <style>
+            @font-face {
+                font-family: "Hussar";
+                src:url(./HussarBoldWebEdition-xq5O.otf) format("opentype");
+            }
+
+            @font-face {
+                font-family: "Vegan";
+                src:url(./VeganStylePersonalUse-5Y58.ttf) format("truetype");
+            }
+
+            body {
+                font-family: 'Hussar';
+                background-color: rgb(206, 248, 201);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .like-button {
+                background-color: rgb(78, 221, 78);
+                border: 1px solid grey;
+                border-radius: 4px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .like-button:hover {
+                background: linear-gradient(200deg, lime, salmon);
+                background-size: 400% 400%;
+
+                animation: FadeIn 2s ease infinite;
+            }
+
+            .image-borders {
+                background-color: rgb(250, 207, 202);
+                padding: 6px;
+                border: 1px solid grey;
+                border-radius: 6px;
+                width: 310px;
+                height: 310px;
+            }
+
+            @keyframes FadeIn {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+
+            h3 {
+                color: rgb(141, 94, 80);
+            }
+
+            .hobby-section {
+                border: 1px solid grey;
+                border-radius: 4px;
+                margin: 8px;
+                padding: 10px;
+            }
+
+            .hobby-section-header {
+                border-bottom: 1px solid grey;;
+            }
+
+            .thumbs-container {
+                padding: 40px;
+                padding-top: 10px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .thumps-up-button {
+                background-image: url(./thumbs_up.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 48px;
+                height: 48px;
+            }
+
+            .thumps-down-button {
+                background-image: url(./thumbs_down.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 48px;
+                height: 48px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Willkommen auf meinen Gästebuch</h1>
+        <h3>mein Name ist Simon Heiss</h3>
+        <div>
+            <img class="image-borders" src="./avatar.jpg" />
+        </div>
+        <div>
+            <div class="hobby-section">
+                <div class="hobby-section-header">Hobbies:</div>
+                <ul>
+                    <li>Programmieren</li>
+                    <li>Auflegen</li>
+                    <li>Modellbau</li>
+                </ul>
+            </div>
+            <div class="hobby-section">
+                <div class="hobby-section-header">Lieblings Schulfächer:</div>
+                <div>
+                    <ol>
+                        <li>Biologie</li>
+                        <li>Informatik</li>
+                        <li>Englisch</li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <input type="text" style="width: 200px;">
+                <button class="like-button">Gruß dalassen</button>
+            </div>
+            <div class="thumbs-container">
+                <div class="thumps-up-button"></div>
+                <div class="thumps-down-button"></div>
+            </div>
+        </div>
+    </body>
+</html>
