@@ -319,17 +319,66 @@ Auch das erspart einem auf Dauer extrem viel Code und deswegen werden Klassen zu
 
 ## Übungen
 Alle ausgaben kannst du entweder über `alert()` oder `console.log()` machen, was dir lieber ist.
+### Variablen
 - gib irgend einen Wert über die `alert()` funktion des browsers aus
 - beschreibe eine Variable und gib den Wert der Variable aus
-- rechne zwei zahlen zusammen und gib das Ergbniss aus
 - nimm zwei variablen und packe den Wert in einem einzigen langen text zusammen. Gib dann diesen Text aus.
 - erstelle eine variable mit einer zahl
-- verwende diese zahl in einem `if`. Gib irgend einen text aus, wenn die Zahl größer als 15 ist und einen anderen Text, wenn die Zahl kleiner ist
-- erstelle ein array mit ein paar namen
-- gib bei diesem array den ersten und letzten namen aus
-- ändere den ersten und letzten wert in diesem array und gib die werte noch einmal aus
-- gib mit einem `foreach` alle namen nacheinander aus
-- erstelle ein object mit ein paar properties die dir einfallen.
+
+### Rechnen
+- Berechne 2 + 3 und gib das Ergebnis in der Konsole aus
+- Berechne 4 * 3 und gib das Ergebnis in der Konsole aus
+- Berechne 4 * 3 + 9 und gib das Ergebnis in der Konsole aus
+
+### Arrays
+du hast folgendes Array:
+
+```
+const user = ['simon', 'peter', 'marion']
+```
+
+- Gib 'Peter' in der console aus, indem du das array verwendest.
+- Überschreibe den Namen 'simon' mit 'mark'
+- Füge dem Array einen namen 'kevin' hinzu
+- Bonus/Google Aufgabe: Füge den namen 'marvin' am Anfang des Arrays hinzu, ohne dass dir namen verloren gehen
+
+### If
+du hast folgenden Code:
+
+```
+const a = 17;
+const b = 12;
+```
+
+Berechne die Summe der Zahlen und gib je nach Erbenis folgenden Text aus:
+- Die Summe der Zahlen ist größer 20
+- Die Summe der Zahlen ist größer 30
+- Die Summe der Zahlen ist kleiner 20
+- Die Summe der Zahlen ist genau 20
+
+Sobald dein Programm fertig ist, ändere den Wert von a zu jeweils:
+- 6
+- 8
+- 13
+- 34
+
+
+## for
+du hast folgendes Array:
+
+```
+const user = ['simon', 'peter', 'marion']
+```
+
+- Gibt zuerst alle Namen nacheinander aus (mit for oder foreach)
+- Gib alle namen aus, aber wenn 'peter' ausgegeben werden soll, gib 'annonym' aus. (Hier ist if und for nötig)
+
+## funktionen
+- Schreibe eine Funktion, die dir 2 Zahlen addiert.
+- Schreibe eine Funktion, die zwei zahlen entgegennimmer und dir ausgibt, ob die erste Zahl größer als die zweite Zahl ist.
+
+### Objekte
+- erstelle ein object mit ein den properties `name` und `alter`.
 - gib den wert dieser properties aus
 - verändere den wert von einer der properties und gib diesen neuen wert aus
 
