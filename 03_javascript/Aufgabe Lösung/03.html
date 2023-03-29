@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            // rechnen
+            const a = 2 + 3
+            console.log(a)
+
+            // arrays
+            let user = ['simon', 'peter', 'marion']
+            console.log(user[1])
+
+            user[0] = 'mark'
+
+            user.push('kevin')
+
+            user.unshift('marvin')
+
+            // if-else
+            const a = 17;
+            const b = 12;
+
+            const sum = a + b;
+
+            if (sum > 30) {
+                console.log('Die Summe der Zahlen ist größer 30')
+            } else if (sum > 20) {
+                console.log('Die Summe der Zahlen ist größer 20')
+            } else if (sum === 20) {
+                console.log('Die Summe der Zahlen ist genau 20')
+            } else {
+                console.log('Die Summe der Zahlen ist kleiner 20')
+            }
+
+            // for
+            user = ['simon', 'peter', 'marion']
+
+            user.forEach(u => {
+                console.log(u)
+            })
+
+            user.forEach(u => {
+                if (u === 'peter') {
+                    console.log('annonym')
+                } else {
+                    console.log(u)
+                }
+            })
+
+            function add(a, b) {
+                return a + b
+            }
+
+            function isBigger(a, b) {
+                if (a > b) {
+                    console.log('erste Zahl is größer')
+                } else {
+                    console.log('erste Zahl is kleiner oder gleich der zweiten zahl')
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="new Audio('cena.mp3').play()">
+            Whos name is it?
+        </button>
+    </body>
+
+    <script>
+    </script>
+</html>
