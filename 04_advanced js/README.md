@@ -82,3 +82,75 @@ document.getElementById('#mein-button').click(() => {
     }
 })
 ```
+
+# Übungen
+## Hoch und runterzählen mit Farbe
+folgender Code:
+
+```html
+<html>
+    <head>
+        <script>
+            window.onload = () => {
+                let meinButton = document.getElementById("button-zum-klicken")
+                let textFeld = document.getElementById("text-ausgabe")
+                let counter = 0
+
+                meinButton.onclick = () => {
+                    counter = counter + 1
+                    textFeld.innerText = counter
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <button id="button-zum-klicken">klick mich</button>
+        <div id="text-ausgabe"></div>
+    </body>
+</html>
+```
+
+- Erweitert den Code, damit die Hintergrundfarbe des Textfeldes zu gelb wechselt, sobald der `counter` 5 erreicht oder größer ist. Sobald der counter 10 erreicht, soll die hintergrundfarbe auf rot wechseln
+- Fügt einen weiteren Button ein, der den counter jeweils um 1 verringert und das Ergebnis im Textfeld anpasst. Stell sicher, dass die Anpassung der Farbe sich noch entsprechend verhält. Bonus: sobald der `counter` unter 5 ist, soll die hintergrundfarbe nicht mehr zu sehen sein.
+
+## Taschenrechner
+Folgender Code
+
+```html
+<html>
+    <head>
+        <script>
+            window.onload = () => {
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="text" id="text-input">
+        <button id="button-plus">+</button>
+        <button id="button-plus">-</button>
+        <button id="button-plus">*</button>
+        <button id="button-plus">/</button>
+        <button id="button-plus">=</button>
+        <div>Ergebnis:</div>
+        <div id="text-ausgabe"></div>
+    </body>
+</html>
+```
+Es soll ein Taschenrechner implementiert werden, der 2 Zahlen verrechnen kann. Der Ablauf soll folgendermaßen sein:
+- Erste Zahl wird im Textfeld eingegeben
+- es wird eine Rechenart ausgewählt (+, -, * oder /)
+- die erste Zahl wird aus dem Textfeld gelöscht
+- eine zweite Zahl wird im Textdfeld eingegeben 
+- mit dem Button für `=` wird das Ergebnis im Feld `text-ausgabe` angezeigt. 
+- Danach kann wieder eine erste Zahl eingegeben werden und so weiter
+- Bonus 1: Stelle die eingegebenen Zahlen und Rechenarten in einem Extra Feld da, damit der User weiß, was er gerade eingegeben hat
+- Bonus 2: Implementiere eine History, die die vergangenen Rechnungen und Ergebnisse sichtbar macht. Zum Beispiel so 
+    ```
+    Vergangene Ergebnisse:
+    1 + 2 = 3
+    2 * 7 = 14
+    24 / 6 = 4
+    ```
