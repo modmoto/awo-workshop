@@ -141,13 +141,13 @@ Folgender Code
 ```
 Es soll ein Taschenrechner implementiert werden, der 2 Zahlen verrechnen kann. Der Ablauf soll folgendermaßen sein:
 - Erste Zahl wird im Textfeld eingegeben
-- es wird eine Rechenart ausgewählt (+, -, * oder /)
+- es wird eine Rechenart ausgewählt (`+`, `-`, `*` oder `/`)
 - die erste Zahl wird aus dem Textfeld gelöscht
-- eine zweite Zahl wird im Textdfeld eingegeben 
+- eine zweite Zahl wird im Textfeld eingegeben 
 - mit dem Button für `=` wird das Ergebnis im Feld `text-ausgabe` angezeigt. 
 - Danach kann wieder eine erste Zahl eingegeben werden und so weiter
 - Bonus 1: Stelle die eingegebenen Zahlen und Rechenarten in einem Extra Feld da, damit der User weiß, was er gerade eingegeben hat
-- Bonus 2: Implementiere eine History, die die vergangenen Rechnungen und Ergebnisse sichtbar macht. Zum Beispiel so 
+- Bonus 2: Implementiere eine History, die die vergangenen Rechnungen und Ergebnisse sichtbar macht. Zum Beispiel so:
     ```
     Vergangene Ergebnisse:
     1 + 2 = 3
