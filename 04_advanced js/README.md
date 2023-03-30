@@ -130,10 +130,10 @@ Folgender Code
     <body>
         <input type="text" id="text-input">
         <button id="button-plus">+</button>
-        <button id="button-plus">-</button>
-        <button id="button-plus">*</button>
-        <button id="button-plus">/</button>
-        <button id="button-plus">=</button>
+        <button id="button-minus">-</button>
+        <button id="button-mal">*</button>
+        <button id="button-geteilt">/</button>
+        <button id="button-ergebnis">=</button>
         <div>Ergebnis:</div>
         <div id="text-ausgabe"></div>
     </body>
